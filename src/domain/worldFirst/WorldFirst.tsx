@@ -1,33 +1,37 @@
 import { css, Stack, Typography } from "@mui/material";
-import { RecycleImage } from "../OneOfaKind.tsx/OneOfaKind";
+
 import line from "@/Line.png";
 import Image from "next/image";
 import Oval from "@/oval.png";
+import "aos/dist/aos.css";
 
 export const WorldFirst = () => {
   return (
     <Stack css={sx.root}>
-      <RecycleImage />
-      <Typography css={sx.world} variant="h1">
-        {"World's FIRST"}
-      </Typography>
-      <Typography variant="h3">{"배터리 분리막 리사이클 신소재"}</Typography>
-      <Typography css={sx.texnic} variant="h1">
-        {"TEXNIC"}
-      </Typography>
-      <div css={sx.line}>
-        <Image src={line} alt="line" fill />
-      </div>
-      <Typography variant="body2">
-        {`"Take a New Spin for the future"`}
-      </Typography>
-      <Image
-        css={sx.oval}
-        src={Oval}
-        alt="oval"
-        width={100}
-        height={40}
-      ></Image>
+      <WorldImage />
+      <Stack
+        css={sx.textWrap}
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1500"
+      >
+        <Typography css={sx.world} variant="h1">
+          {"World's FIRST"}
+        </Typography>
+        <Typography variant="h3">{"배터리 분리막 리사이클 신소재"}</Typography>
+        <Typography css={sx.texnic} variant="h1">
+          {"TEXNIC"}
+        </Typography>
+        <div css={sx.line}>
+          <Image src={line} alt="line" fill />
+        </div>
+        <Typography variant="body2">
+          {`"Take a New Spin for the future"`}
+        </Typography>
+        <div css={sx.oval}>
+          <Image src={Oval} alt="oval" fill></Image>
+        </div>
+      </Stack>
     </Stack>
   );
 };
@@ -36,6 +40,10 @@ const sx = {
   root: css`
     align-items: center;
     position: relative;
+    padding-bottom: 5vw;
+  `,
+  textWrap: css`
+    align-items: center;
   `,
   world: css`
     margin-top: 20.833vw;
@@ -43,18 +51,30 @@ const sx = {
   `,
   texnic: css`
     line-height: 11.667vw;
-    font-weight: 400;
+    font-weight: 900;
     margin-bottom: 28.125vw;
   `,
   line: css`
     width: 1px;
     height: 26.042vw;
     position: absolute;
-    bottom: 9vw;
-    left: 50vw;
+    bottom: 12vw;
+    left: 26vw;
     font-weight: 700;
   `,
   oval: css`
     margin-top: 2.083vw;
+    position: relative;
+    width: 5.208vw;
+    height: 2.083vw;
   `,
+  recycleImage: css`
+    width: 52.083vw;
+    height: 36.458vw;
+    background-color: #fff;
+  `,
+};
+
+const WorldImage = () => {
+  return <div css={sx.recycleImage} />;
 };

@@ -1,4 +1,5 @@
 import { css, Stack, Typography } from "@mui/material";
+import "aos/dist/aos.css";
 
 export const OneofaKind = () => {
   return (
@@ -12,7 +13,7 @@ export const OneofaKind = () => {
       <Typography css={sx.h2} variant="h2">
         Functional
       </Typography>
-      <Typography css={sx.h1} variant="h1">
+      <Typography css={sx.material} variant="h1">
         MATERIAL
       </Typography>
       <RecycleImage />
@@ -21,7 +22,6 @@ export const OneofaKind = () => {
         패션 제품부터{"\n"}아웃도어, 인테리어, 자동차 시트까지...{"\n"}다양한
         아이템으로 전개가 가능한{"\n"}놀라운 확장성까지!
       </Typography>
-      
     </Stack>
   );
 };
@@ -29,12 +29,15 @@ export const OneofaKind = () => {
 const sx = {
   root: css`
     align-items: center;
- 
   `,
   kind: css`
     line-height: 4.375vw;
   `,
   h1: css`
+    line-height: 11.667vw;
+  `,
+  material: css`
+    font-weight: 700;
     line-height: 11.667vw;
   `,
   h2: css`
@@ -58,9 +61,15 @@ const sx = {
     margin: 20.833vw 0;
     text-align: center;
   `,
- 
 };
 
-export const RecycleImage = () => {
-  return <div css={sx.recycleImage} />;
+const RecycleImage = () => {
+  return (
+    <div
+      css={sx.recycleImage}
+      data-aos="fade-left"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    />
+  );
 };

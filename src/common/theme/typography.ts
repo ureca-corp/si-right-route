@@ -8,7 +8,7 @@ export const baseTypographyOptions: TypographyOptions = {
   },
   h1: {
     fontSize: "8.333vw", //160
-    fontWeight: 700,
+    fontWeight: 400,
   },
   h2: {
     fontSize: "5.208vw", //100
@@ -23,10 +23,10 @@ export const baseTypographyOptions: TypographyOptions = {
   },
   body1: {
     fontSize: "3.125vw", //60
-    fontWeight: "700",
+    fontWeight: "400",
   },
   body2: {
     fontSize: "2.083vw", //40
-    fontWeight: "700",
+    fontWeight: "400",
   },
 };

@@ -1,60 +1,39 @@
 import { css } from "@emotion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import { Stack } from "@mui/system";
 import { Typography } from "@mui/material";
+import "swiper/css/autoplay";
 
 export const SlideSection = () => {
+  SwiperCore.use([Autoplay, Pagination, Navigation]);
   return (
-    <div>
+    <div css={sx.root}>
       <Swiper
+        pagination={{
+          clickable: true,
+        }}
+        slidesPerView={6}
         loop={true}
-        slidesPerView={4}
         spaceBetween={30}
-        modules={[Autoplay]}
+        freeMode={true}
         className="mySwiper"
         autoplay={{
-          delay: 1500,
+          delay: 1,
           disableOnInteraction: false,
         }}
+        speed={4000}
+        modules={[Autoplay, Pagination, Navigation]}
       >
-        <SwiperSlide>
-          <Stack>
-            <Battery1 />
-            <Battery2 />
-          </Stack>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Stack>
-            <Battery1 />
-            <Battery2 />
-          </Stack>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Stack>
-            <Battery1 />
-            <Battery2 />
-          </Stack>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Stack>
-            <Battery1 />
-            <Battery2 />
-          </Stack>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Stack>
-            <Battery1 />
-            <Battery2 />
-          </Stack>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Stack>
-            <Battery1 />
-            <Battery2 />
-          </Stack>
-        </SwiperSlide>
+        {[...Array(12)].map((e, i) => (
+          <SwiperSlide key={i}>
+            <Stack css={sx.imageWrap}>
+              <Battery1 />
+              <Battery2 />
+            </Stack>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <Typography css={sx.body} variant="body2">
@@ -69,6 +48,20 @@ export const SlideSection = () => {
 };
 
 const sx = {
+  root: css`
+    margin-top: 5vw;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+  `,
+  imageWrap: css`
+    align-items: center;
+    gap: 1vw;
+  `,
   battery1: css`
     width: 13.542vw;
     aspect-ratio: 1;

@@ -7,12 +7,12 @@
 @font-face {
   font-family: "Texnic";
   src: url(../theme/fonts/Texnic-Bold.ttf);
-  font-weight: bold;
+  font-weight: 700;
 }
 @font-face {
   font-family: "Texnic";
-  src: url(../theme/fonts/Texnic-Black.ttf);
-  font-weight: bolder;
+  src: url(../theme/fonts/Texnic-Bold.ttf);
+  font-weight: 900;
 }
 
 * {
@@ -23,6 +23,7 @@ html,
 body {
   width: 100%;
   font-family: "Texnic";
+  font-weight: 400;
   color: #fff;
 }
 
