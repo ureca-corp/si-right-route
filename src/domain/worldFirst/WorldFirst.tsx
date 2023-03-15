@@ -1,18 +1,22 @@
 import { css, Stack, Typography } from "@mui/material";
-
+import AOS from "aos";
 import line from "@/Line.png";
 import Image from "next/image";
 import Oval from "@/oval.png";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const WorldFirst = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <Stack css={sx.root}>
       <WorldImage />
       <Stack
         css={sx.textWrap}
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
+        data-aos="fade-down"
+        data-aos-easing="linear"
         data-aos-duration="1500"
       >
         <Typography css={sx.world} variant="h1">
@@ -22,6 +26,7 @@ export const WorldFirst = () => {
         <Typography css={sx.texnic} variant="h1">
           {"TEXNIC"}
         </Typography>
+
         <div css={sx.line}>
           <Image src={line} alt="line" fill />
         </div>
@@ -58,7 +63,7 @@ const sx = {
     width: 1px;
     height: 26.042vw;
     position: absolute;
-    bottom: 12vw;
+    bottom: 11vw;
     left: 26vw;
     font-weight: 700;
   `,
