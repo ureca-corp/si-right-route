@@ -11,16 +11,16 @@ export const Section3 = () => {
     <Stack css={sx.root}>
       <ScissorsImage />
       <div css={sx.scissors1("0", "17vw")}>
-        <Image src={scissors} alt="scissors" fill />
+        <Image src={scissors} alt="scissors" fill sizes={"100"} />
       </div>
       <div css={sx.scissors1("31vw", "17vw")}>
-        <Image src={scissors2} alt="scissors" fill />
+        <Image src={scissors2} alt="scissors" fill sizes={"100"} />
       </div>
       <div css={sx.scissors1("0vw", "73vw")}>
-        <Image src={scissors2} alt="scissors" fill />
+        <Image src={scissors2} alt="scissors" fill sizes={"100"} />
       </div>
       <div css={sx.scissors1("31vw", "73vw")}>
-        <Image src={scissors3} alt="scissors" fill />
+        <Image src={scissors3} alt="scissors" fill sizes={"100"} />
       </div>
       <Typography css={sx.text} variant="body2">
         우리는 독자적인 재활용 기술을 개발하였고,{"\n"}버려진 이차전지 분리막이

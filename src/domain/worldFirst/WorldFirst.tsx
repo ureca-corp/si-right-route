@@ -1,10 +1,9 @@
+import line from "@/Line.png";
+import Oval from "@/Oval.png";
 import { css, Stack, Typography } from "@mui/material";
 import AOS from "aos";
-import line from "@/Line.png";
-import Image from "next/image";
-import Oval from "@/Oval.png";
-import OvalFrame from "@/OvalFrame.png";
 import "aos/dist/aos.css";
+import Image from "next/image";
 import { useEffect } from "react";
 
 export const WorldFirst = () => {
@@ -29,13 +28,13 @@ export const WorldFirst = () => {
         </Typography>
 
         <div css={sx.line}>
-          <Image src={line} alt="line" fill />
+          <Image src={line} alt="line" fill sizes={"100"} />
         </div>
         <Typography variant="body2">
           {`"Take a New Spin for the future"`}
         </Typography>
         <div css={sx.oval}>
-          <Image src={Oval} alt="oval" fill></Image>
+          <Image src={Oval} alt="oval" fill sizes={"100"}></Image>
         </div>
       </Stack>
     </Stack>

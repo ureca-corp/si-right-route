@@ -14,14 +14,15 @@ export const Section2 = () => {
     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <Stack css={sx.root}>
         <Typography variant="h2">2025년 폐 이차전지 분리막</Typography>
-        <Typography css={sx.head1} variant="h1">
-          176,740톤
-        </Typography>
+        <div css={sx.head1}>
+          <p css={sx.number}>176,740</p>
+          <span css={sx.ton}>톤</span>
+        </div>
+
         <div css={sx.head3}>
           축구장의
           <Typography css={sx.number} variant="h1">
-            {" "}
-            80,000{" "}
+            80,000
           </Typography>
           배
         </div>
@@ -35,14 +36,24 @@ const sx = {
     align-items: center;
   `,
   head1: css`
+    font-size: 8.333vw;
+    display: flex;
+    line-height: 11.667vw;
+    align-items: baseline;
+  `,
+
+  ton: css`
     line-height: 11.667vw;
   `,
   head3: css`
     font-size: 3.125vw;
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
+    gap: 1vw;
   `,
   number: css`
     line-height: 11.667vw;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
   `,
 };
