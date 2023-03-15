@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 export const OneofaKind = () => {
   return (
     <Stack css={sx.root}>
-      <Typography css={sx.kind} variant="body1">
+      <Typography css={sx.kind} variant="h4">
         One-of-a-Kind
       </Typography>
       <Typography css={sx.h1} variant="h1">

@@ -17,6 +17,10 @@ export const baseTypographyOptions: TypographyOptions = {
   h3: {
     fontSize: "4.167vw", //80
   },
+  h4: {
+    fontSize: "3.125vw", //60
+    fontWeight: "400",
+  },
 
   h6: {
     fontSize: "1.458vw",
@@ -24,9 +28,11 @@ export const baseTypographyOptions: TypographyOptions = {
   body1: {
     fontSize: "3.125vw", //60
     fontWeight: "400",
+    fontFamily: "Noto Sans KR",
   },
   body2: {
     fontSize: "2.083vw", //40
     fontWeight: "400",
+    fontFamily: "Noto Sans KR",
   },
 };
