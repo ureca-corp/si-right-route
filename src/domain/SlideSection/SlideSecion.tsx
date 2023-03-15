@@ -5,10 +5,11 @@ import { Stack } from "@mui/system";
 import { Typography } from "@mui/material";
 import "swiper/css/autoplay";
 
+SwiperCore.use([Autoplay, Pagination, Navigation]);
+
 export const SlideSection = () => {
-  SwiperCore.use([Autoplay, Pagination, Navigation]);
   return (
-    <div css={sx.root}>
+    <div css={sx.root} data-aos={"fade-left"}>
       <Swiper
         pagination={{
           clickable: true,
@@ -35,7 +36,7 @@ export const SlideSection = () => {
         ))}
       </Swiper>
 
-      <Typography css={sx.body} variant="body2">
+      <Typography css={sx.body} variant="body2" data-aos={"fade-up"}>
         고기술로 만들어진 이차전지 분리막은{"\n"}작은 스크래치에도 민감하여 높은
         품질 기준을 가지고 있습니다.{"\n\n"} 사용기준 미달의 배터리 분리막을
         새롬게 활용한다면{"\n"}그대로 폐기하여 자원을 낭비하거나 환경을

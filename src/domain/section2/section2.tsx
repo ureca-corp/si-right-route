@@ -4,7 +4,7 @@ import { Stack } from "@mui/system";
 
 export const Section2 = () => {
   return (
-    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <div data-aos="fade-down">
       <Stack css={sx.root}>
         <Typography variant="h2">2025년 폐 이차전지 분리막</Typography>
         <div css={sx.head1}>

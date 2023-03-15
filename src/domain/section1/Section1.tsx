@@ -8,11 +8,7 @@ export const Section1 = () => {
         {"ABOUT US"}
       </Typography>
       <Stack>
-        <Stack
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-        >
+        <Stack data-aos="fade-down">
           <Typography css={sx.head2} variant="h2">
             {"전기차 배터리 핵심 부품"}
           </Typography>
@@ -21,7 +17,7 @@ export const Section1 = () => {
           </Typography>
         </Stack>
 
-        <Typography css={sx.body} variant="body2">
+        <Typography css={sx.body} variant="body2" data-aos={"fade-up"}>
           {
             "전기차 생산량이 급격히 늘어남에 따라\n이차전지 분리막의 폐기물\n또한 막대하게 증가하고 있습니다.\n2025년에는 축구장 면적의 8만배나 되는\n배터리 분리막 폐기물이 발생된다고 합니다."
           }

@@ -28,7 +28,7 @@ export const Section3V2 = () => {
           <Microscope />
         </FadeUp>
       </div>
-      <Typography css={sx.text} variant="body2">
+      <Typography css={sx.text} variant="body2" data-aos={"fade-up"}>
         {
           "우리는 독자적인 재활용 기술을 개발하였고,\n버려진 이차전지 분리막이\n가진 미세다공형 구조를 그대로 살린\n기능성 리사이클 섬유 제품을\n‘세계 최초로’\n선보일 수 있었습니다."
         }
