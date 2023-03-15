@@ -2,14 +2,11 @@ import line from "@/Line.png";
 import Oval from "@/Oval.png";
 import { css, Stack, Typography } from "@mui/material";
 import AOS from "aos";
-import "aos/dist/aos.css";
+
 import Image from "next/image";
 import { useEffect } from "react";
 
 export const WorldFirst = () => {
-  useEffect(() => {
-    AOS.init();
-  });
   return (
     <Stack css={sx.root}>
       <WorldImage />

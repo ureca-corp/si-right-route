@@ -1,5 +1,3 @@
-import { PaletteOptions } from "@mui/material";
-
 export enum Color {
   TextColor1 = "#000000",
   TextColor2 = "#76767F",

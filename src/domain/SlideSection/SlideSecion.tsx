@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
-import "swiper/css";
 import { Stack } from "@mui/system";
 import { Typography } from "@mui/material";
 import "swiper/css/autoplay";

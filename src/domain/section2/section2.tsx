@@ -1,15 +1,8 @@
+import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import { css } from "@emotion/react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export const Section2 = () => {
-  useEffect(() => {
-    AOS.init();
-  });
-
   return (
     <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <Stack css={sx.root}>
