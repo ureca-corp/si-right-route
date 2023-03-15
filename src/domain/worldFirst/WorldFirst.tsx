@@ -2,7 +2,8 @@ import { css, Stack, Typography } from "@mui/material";
 import AOS from "aos";
 import line from "@/Line.png";
 import Image from "next/image";
-import Oval from "@/oval.png";
+import Oval from "@/Oval.png";
+import OvalFrame from "@/OvalFrame.png";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
@@ -72,6 +73,7 @@ const sx = {
     position: relative;
     width: 5.208vw;
     height: 2.083vw;
+    transform: rotate3d(1, 1, 1, -45deg);
   `,
   recycleImage: css`
     width: 52.083vw;
