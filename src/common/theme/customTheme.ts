@@ -1,10 +1,10 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { Color } from "./colors";
 import { ScreenType } from "./screen";
-import { baseTypographyOptions } from "./typography";
+import { lightTypographyOptions, darkTypographyOptions } from "./typography";
 
-export const lightTheme = createTheme({
-  typography: baseTypographyOptions,
+export const darkTheme = createTheme({
+  typography: darkTypographyOptions,
   breakpoints: {
     values: {
       xs: 0,
@@ -35,16 +35,16 @@ export const lightTheme = createTheme({
       styleOverrides: {
         sizeMedium: {
           padding: "11px 34px",
-          // color: Color.TextColor1,
-          // backgroundColor: Color.Secondary1,
           borderRadius: "12px",
-          // "&:hover": {
-          //   backgroundColor: Color.Secondary2,
-          // },
         },
       },
     },
   },
+});
+
+export const lightTheme = createTheme({
+  ...darkTheme,
+  typography: lightTypographyOptions,
 });
 
 export enum ThemeTypes {
@@ -54,7 +54,10 @@ export enum ThemeTypes {
 
 export const findTheme = (theme: ThemeTypes) => {
   switch (theme) {
-    default:
+    case ThemeTypes.Light:
       return responsiveFontSizes(lightTheme);
+
+    default:
+      return responsiveFontSizes(darkTheme);
   }
 };

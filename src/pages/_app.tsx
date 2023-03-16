@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   });
 
   return (
-    <ThemeProvider theme={findTheme(ThemeTypes.Light)}>
+    <ThemeProvider theme={findTheme(ThemeTypes.Dark)}>
       <Component {...pageProps} />
     </ThemeProvider>
   );

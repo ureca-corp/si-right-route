@@ -5,7 +5,6 @@ export const baseTypographyOptions: TypographyOptions = {
 
   allVariants: {
     whiteSpace: "pre-wrap",
-    color: "#fff",
   },
   h1: {
     fontSize: "8.333vw", //160
@@ -35,5 +34,21 @@ export const baseTypographyOptions: TypographyOptions = {
     fontSize: "2.083vw", //40
     fontWeight: "400",
     fontFamily: "Noto Sans KR",
+  },
+};
+
+export const darkTypographyOptions: TypographyOptions = {
+  ...baseTypographyOptions,
+  allVariants: {
+    whiteSpace: "pre-wrap",
+    color: "#fff",
+  },
+};
+
+export const lightTypographyOptions: TypographyOptions = {
+  ...baseTypographyOptions,
+  allVariants: {
+    whiteSpace: "pre-wrap",
+    color: "#222",
   },
 };
