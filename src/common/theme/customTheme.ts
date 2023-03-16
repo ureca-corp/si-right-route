@@ -15,8 +15,11 @@ export const darkTheme = createTheme({
     },
   },
   palette: {
+    background: {
+      default: "#000",
+    },
     primary: {
-      main: Color.Secondary1,
+      main: "#fff",
     },
     secondary: {
       main: Color.TextColor2,
@@ -45,6 +48,11 @@ export const darkTheme = createTheme({
 export const lightTheme = createTheme({
   ...darkTheme,
   typography: lightTypographyOptions,
+  palette: {
+    background: {
+      default: "#fff",
+    },
+  },
 });
 
 export enum ThemeTypes {

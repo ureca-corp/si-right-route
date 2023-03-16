@@ -32,7 +32,7 @@ export const LandingView = () => {
 
 const sx = {
   root: css`
-    background-color: #000;
+    /* background-color: #000; */
     position: relative;
   `,
   contentWrap: css`

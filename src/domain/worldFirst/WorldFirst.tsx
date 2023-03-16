@@ -1,11 +1,17 @@
 import { Mq } from "@/common/theme/screen";
 import line from "@/Line.png";
 import Oval from "@/Oval.png";
-import { css, Stack, Typography } from "@mui/material";
+// import { ReactComponent as Oval2 } from "@/oval-v2.svg";
+import Oval2 from "@/oval-v2.svg";
+import { css, Stack, Typography, useTheme } from "@mui/material";
 
 import Image from "next/image";
 
 export const WorldFirst = () => {
+  const theme = useTheme();
+
+  const isThemeDark = theme.palette.background.default == "#000";
+
   return (
     <Stack css={sx.root}>
       <div data-aos={"fade-right"}>
@@ -45,13 +51,23 @@ export const WorldFirst = () => {
           {`"Take a New Spin for the future"`}
         </Typography>
         <div css={sx.oval}>
-          <Image
-            src={Oval}
-            alt="oval"
-            fill
-            sizes={"100"}
-            data-aos={"fade-in"}
-          />
+          {isThemeDark ? (
+            <Image
+              src={Oval}
+              alt="oval"
+              fill
+              sizes={"100"}
+              data-aos={"fade-in"}
+            />
+          ) : (
+            <Image
+              src={Oval2}
+              alt="oval"
+              fill
+              sizes={"100"}
+              data-aos={"fade-in"}
+            />
+          )}
         </div>
       </Stack>
     </Stack>
