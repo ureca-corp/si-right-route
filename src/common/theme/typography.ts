@@ -5,6 +5,7 @@ export const baseTypographyOptions: TypographyOptions = {
 
   allVariants: {
     whiteSpace: "pre-wrap",
+    color: "#fff",
   },
   h1: {
     fontSize: "8.333vw", //160

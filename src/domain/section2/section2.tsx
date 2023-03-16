@@ -7,18 +7,18 @@ export const Section2 = () => {
     <div data-aos="fade-down">
       <Stack css={sx.root}>
         <Typography variant="h2">2025년 폐 이차전지 분리막</Typography>
-        <div css={sx.head1}>
-          <p css={sx.number}>176,740</p>
+        <Typography css={sx.head1}>
+          <span css={sx.number}>176,740</span>
           <span css={sx.ton}>톤</span>
-        </div>
+        </Typography>
 
-        <div css={sx.head3}>
+        <Typography css={sx.head3} component={"div"}>
           축구장의
           <Typography css={sx.number} variant="h1">
             80,000
           </Typography>
           배
-        </div>
+        </Typography>
       </Stack>
     </div>
   );
