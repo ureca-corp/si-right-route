@@ -1,20 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap");
-@font-face {
-  font-family: "Texnic";
-  src: url(../theme/fonts/Texnic-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Texnic";
-  src: url(../theme/fonts/Texnic-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Texnic";
-  src: url(../theme/fonts/Texnic-Bold.ttf);
-  font-weight: 900;
-}
 
 * {
   box-sizing: border-box;
