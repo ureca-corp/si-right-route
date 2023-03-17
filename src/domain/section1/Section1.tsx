@@ -33,6 +33,7 @@ const sx = {
   `,
   aboutUs: css`
     height: 29.167vw;
+    font-family: "Texnic";
   `,
   textWrap: css`
     align-items: center;
