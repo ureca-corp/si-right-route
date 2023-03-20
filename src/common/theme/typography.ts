@@ -11,8 +11,9 @@ export const baseTypographyOptions: TypographyOptions = {
     fontWeight: 400,
   },
   h2: {
-    fontSize: "5.208vw", //100
+    fontSize: "60", //100
     fontWeight: "700",
+    fontFamily: "Texnic",
   },
   h3: {
     fontSize: "4.167vw", //80
