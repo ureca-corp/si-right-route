@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import { CssBaseline } from "@mui/material/";
 import "@/common/styles/globals.css";
+import "@/fonts/font.css";
 import "aos/dist/aos.css";
 import "swiper/css";
 

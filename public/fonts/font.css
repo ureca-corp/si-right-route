@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Texnic";
+  font-weight: 400;
+  src: url("/fonts/Texnic/Texnic-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Texnic";
+  font-weight: 700;
+  src: url("/fonts/Texnic/Texnic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Texnic";
+  font-weight: 900;
+  src: url("/fonts/Texnic/Texnic-Bold.ttf") format("truetype");
+}
