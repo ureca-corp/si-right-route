@@ -14,10 +14,6 @@ export const WorldFirst = () => {
 
   return (
     <Stack css={sx.root}>
-      <div data-aos={"fade-right"}>
-        <WorldImage />
-      </div>
-
       <Stack css={sx.textWrap}>
         <Typography
           css={sx.world}
@@ -41,7 +37,8 @@ export const WorldFirst = () => {
           data-aos="fade-down"
           data-aos-easing="ease-in-out"
         >
-          {"TEXNIC"}
+          TEXNIC
+          <sup css={sx.sup}>®</sup>
         </Typography>
 
         <div css={sx.line} data-aos="fade-in" data-aos-easing="ease-in-out">
@@ -94,6 +91,12 @@ const sx = {
   texnic: css`
     line-height: 11.667vw;
     font-weight: 900;
+    margin-top: 5vw;
+  `,
+  sup: css`
+    font-size: 30px;
+    position: relative;
+    top: -29px;
   `,
   line: css`
     position: relative;
@@ -123,5 +126,5 @@ const sx = {
 };
 
 const WorldImage = () => {
-  return <div css={sx.recycleImage} />;
+  // return <div css={sx.recycleImage} />;
 };

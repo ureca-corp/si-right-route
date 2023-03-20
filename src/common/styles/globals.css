@@ -17,3 +17,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
+sup {
+  font-size: xx-small;
+  vertical-align: top;
+}

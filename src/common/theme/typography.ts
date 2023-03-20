@@ -11,28 +11,30 @@ export const baseTypographyOptions: TypographyOptions = {
     fontWeight: 400,
   },
   h2: {
-    fontSize: "60", //100
-    fontWeight: "700",
+    fontSize: "60px", //100
+    fontWeight: "400",
     fontFamily: "Texnic",
   },
   h3: {
-    fontSize: "4.167vw", //80
+    fontSize: "44px",
   },
   h4: {
     fontSize: "3.125vw", //60
     fontWeight: "400",
   },
-
+  h5: {
+    fontSize: "32px",
+  },
   h6: {
-    fontSize: "1.458vw",
+    fontSize: "28px",
   },
   body1: {
-    fontSize: "3.125vw", //60
+    fontSize: "24", //60
     fontWeight: "400",
     fontFamily: "Noto Sans KR",
   },
   body2: {
-    fontSize: "2.083vw", //40
+    fontSize: "18", //40
     fontWeight: "400",
     fontFamily: "Noto Sans KR",
   },

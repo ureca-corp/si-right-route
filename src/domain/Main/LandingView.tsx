@@ -1,14 +1,14 @@
 import { css } from "@emotion/react";
-import { OneofaKind } from "../OneOfaKind.tsx/OneOfaKind";
-import { Section1 } from "../section1/Section1";
-import { Section2 } from "../section2/section2";
+import { OneofaKind } from "../chapter2/chapter2";
+import { Section1 } from "../intro/intro";
+import { Section2 } from "../chapter1/chapter1";
 import { Section3 } from "../section3/section3";
 import { Section3V2 } from "../section3/section3-v2";
-import { SlideSection } from "../SlideSection/SlideSecion";
 import { WorldFirst } from "../worldFirst/WorldFirst";
 import bg from "@/bg.png";
 import Image from "next/image";
 import { Stack } from "@mui/material";
+import { Chapter3 } from "../chapter3/chapter3";
 
 export const LandingView = () => {
   return (
@@ -16,10 +16,10 @@ export const LandingView = () => {
       <Stack css={sx.contentWrap}>
         <Section1 />
         <Section2 />
-        <SlideSection />
         <Section3 />
         {/* <Section3V2 /> */}
         <OneofaKind />
+        <Chapter3 />
         <WorldFirst />
       </Stack>
 
