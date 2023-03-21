@@ -1,12 +1,13 @@
 import { ChapterTitle } from "@/common/components/chapterTitle";
+import { Mq } from "@/common/theme/screen";
 import { css, Stack, Typography } from "@mui/material";
 import "aos/dist/aos.css";
 
-export const OneofaKind = () => {
+export const Chapter2 = () => {
   return (
     <div>
       <Stack css={sx.root}>
-        <div css={sx.textContainer} data-aos={"fade-up"}>
+        <div css={sx.textContainer}>
           <ChapterTitle numb={2} />
           <Typography css={sx.title} variant="h5">
             우리만의 길
@@ -15,14 +16,14 @@ export const OneofaKind = () => {
 
         <RecycleImage />
       </Stack>
-      <Stack css={sx.textWrap}>
+      <Stack css={sx.textWrap} data-aos={"fade-down"} data-aos-duration="1500">
         <Typography
           css={sx.bottomTitle}
           variant="h5"
-        >{`전기차 배터리 핵심 부품 "이차전지 분리막"`}</Typography>
-        <Typography css={sx.text} variant="body2" data-aos={"fade-up"}>
+        >{`World's First 배터리 분리막 리사이클 신소재`}</Typography>
+        <Typography css={sx.text} variant="body2">
           {
-            "배터리 분리막은 전기차 시장의 활성화와 함께 그 생산량이 급격하게 증가하게 되었습니다.\n친환경 전기차라는 수식어와 다르게 그 뒤단에서는 심각한 환경오염을 유발할 수 있는 막대한 양의 분리막 폐기물이 소각되고 있습니다."
+            "우리만의 방식으로 아이디어를 연구하고 테스트한 결과,\n독자적인 재활용 기술 개발에 성공하였고, 배터리 분리막 리사이클 기능성 섬유 제품을'세계 최초로'선보일 수 있었습니다.\n우리의 기술이 특별한 이유는 배터리 분리막 고유의 미세기공을 헤치지 않는 혁신 기술이며, 수거한 폐 분리막을 100% 사용할 수 있는 친환경 재활용 기술이기 때문입니다"
           }
         </Typography>
       </Stack>
@@ -52,13 +53,17 @@ const sx = {
     background-color: #fff;
   `,
   textWrap: css`
-    padding-left: 8.333vw;
+    padding: 0 8.333vw;
   `,
   bottomTitle: css`
-    margin: 7vw 0 0 0;
+    margin: 11vw 0 0 0;
   `,
   text: css`
     margin: 1.2vw 0 12.833vw 0;
+    line-height: 32px;
+    @media ${Mq.sm} {
+      margin: 24px 0 130px 0;
+    }
   `,
 };
 

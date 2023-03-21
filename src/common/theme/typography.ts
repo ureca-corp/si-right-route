@@ -7,7 +7,7 @@ export const baseTypographyOptions: TypographyOptions = {
     whiteSpace: "pre-wrap",
   },
   h1: {
-    fontSize: "8.333vw", //160
+    fontSize: "100px", //160
     fontWeight: 400,
   },
   h2: {
@@ -32,9 +32,12 @@ export const baseTypographyOptions: TypographyOptions = {
     fontSize: "24", //60
     fontWeight: "400",
     fontFamily: "Noto Sans KR",
+    "@media (max-width:1200px)": {
+      fontSize: "18",
+    },
   },
   body2: {
-    fontSize: "18", //40
+    fontSize: "20", //40
     fontWeight: "400",
     fontFamily: "Noto Sans KR",
   },

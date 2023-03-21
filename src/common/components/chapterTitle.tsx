@@ -1,5 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import { css } from "@emotion/react";
+import { Mq } from "../theme/screen";
 
 type ChapterTitleType = {
   numb: number;
@@ -18,9 +19,11 @@ export const ChapterTitle = ({ numb }: ChapterTitleType) => {
 
 const sx = {
   chaptor: css`
-    padding: 0 20px;
     border-bottom: 1px solid #fff;
     align-items: baseline;
+    @media ${Mq.sm} {
+      margin-bottom: 20px;
+    }
   `,
   numb: css`
     font-size: 28px !important;

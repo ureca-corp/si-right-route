@@ -1,11 +1,10 @@
 import { css } from "@emotion/react";
-import { OneofaKind } from "../chapter2/chapter2";
-import { Section1 } from "../intro/intro";
-import { Section2 } from "../chapter1/chapter1";
-import { Section3 } from "../section3/section3";
+import { Chapter2 } from "../chapter2/chapter2";
+import { Intro } from "../intro/intro";
+import { Chapter1 } from "../chapter1/chapter1";
 import { Section3V2 } from "../section3/section3-v2";
 import { WorldFirst } from "../worldFirst/WorldFirst";
-import bg from "@/bg.png";
+import bg from "@/assets/bg.png";
 import Image from "next/image";
 import { Stack } from "@mui/material";
 import { Chapter3 } from "../chapter3/chapter3";
@@ -14,11 +13,10 @@ export const LandingView = () => {
   return (
     <div css={sx.root}>
       <Stack css={sx.contentWrap}>
-        <Section1 />
-        <Section2 />
-        <Section3 />
+        <Intro />
+        <Chapter1 />
         {/* <Section3V2 /> */}
-        <OneofaKind />
+        <Chapter2 />
         <Chapter3 />
         <WorldFirst />
       </Stack>
