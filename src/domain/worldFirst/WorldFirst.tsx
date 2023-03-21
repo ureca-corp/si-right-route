@@ -120,6 +120,7 @@ const sx = {
   `,
   take: css`
     font-family: Noto Sans KR !important;
+    text-align: center;
   `,
   oval: css`
     margin-top: 2.083vw;
