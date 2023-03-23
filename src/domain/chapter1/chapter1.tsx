@@ -33,7 +33,7 @@ export const Chapter1 = () => {
           </Typography>
         </Stack>
         <Stack css={sx.middle} data-aos={"fade-up"} data-aos-duration="2000">
-          <Typography variant="h2" component={"div"} css={sx.line1}>
+          <Typography variant="h2" component={"div"}>
             <span css={sx.year}>2030</span>년 세계 분리막 생산량
           </Typography>
           <Typography variant="h1" css={sx.red}>
