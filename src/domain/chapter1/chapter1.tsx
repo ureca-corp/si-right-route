@@ -33,17 +33,19 @@ export const Chapter1 = () => {
           </Typography>
         </Stack>
         <Stack css={sx.middle} data-aos={"fade-up"} data-aos-duration="2000">
-          <Typography variant="h3" component={"div"}>
+          <Typography variant="h2" component={"div"} css={sx.line1}>
             <span css={sx.year}>2030</span>년 세계 분리막 생산량
           </Typography>
-          <Typography variant="h2" css={sx.red}>
+          <Typography variant="h1" css={sx.red}>
             377억m&sup2;
           </Typography>
           <Typography css={sx.battery}>
-            {`"배터리 분리막 시장 연 평균 40& 성장, 분리막 폐기물 문제가중"`}
+            {`"배터리 분리막 시장 연 평균 40% 성장, 분리막 폐기물 문제 가중"`}
           </Typography>
-          <Typography variant="h3">폐기 시 발생하는 CO2 </Typography>
-          <Typography variant="h3" component={"div"}>
+          <Typography variant="h2" component={"div"}>
+            폐기 시 발생하는 CO<span css={sx.two}>2</span>
+          </Typography>
+          <Typography variant="h2" component={"div"}>
             <span css={sx.year}>56,550</span> tons
           </Typography>
           <Typography css={sx.seperate}>
@@ -104,16 +106,19 @@ const sx = {
   `,
   middle: css`
     align-items: center;
+    text-align: center;
+    word-break: keep-all;
   `,
+
   year: css`
     font-family: "Noto Sans KR";
   `,
   red: css`
-    color: red;
-    font-size: 74px !important;
+    color: #e94817;
+    /* font-size: 74px !important; */
     font-weight: 700;
     margin-bottom: 1vw;
-    @media ${Mq.xs} {
+    @media ${Mq.sm} {
       font-size: 56px !important;
     }
   `,
@@ -123,6 +128,12 @@ const sx = {
     @media ${Mq.xs} {
       padding: 0 15px;
       margin-bottom: 40px;
+    }
+  `,
+  two: css`
+    font-size: 25.997px;
+    @media ${Mq.md} {
+      font-size: 16px;
     }
   `,
   seperate: css`
