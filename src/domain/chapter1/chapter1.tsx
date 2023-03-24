@@ -3,6 +3,8 @@ import { Mq } from "@/common/theme/screen";
 import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
+import car from "@/assets/car.png";
+import Image from "next/image";
 
 export const Chapter1 = () => {
   return (
@@ -15,7 +17,9 @@ export const Chapter1 = () => {
       </Stack>
       <Stack>
         <Stack css={sx.imageWrap}>
-          <ScissorsImage />
+          <div css={sx.car}>
+            <Image src={car} alt="car" fill sizes="100" />
+          </div>
         </Stack>
         <Stack
           css={sx.textWrap}
@@ -89,7 +93,11 @@ const sx = {
   `,
   imageWrap: css`
     align-items: center;
+  `,
+  car: css`
     position: relative;
+    width: 50vw;
+    height: 22vw;
   `,
   textWrap: css`
     padding: 0 8.333vw;
