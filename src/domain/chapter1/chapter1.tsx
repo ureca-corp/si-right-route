@@ -3,7 +3,7 @@ import { Mq } from "@/common/theme/screen";
 import { css } from "@emotion/react";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
-import car from "@/assets/car.png";
+import car from "@/assets/Car.png";
 import Image from "next/image";
 
 export const Chapter1 = () => {
