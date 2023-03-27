@@ -18,6 +18,7 @@ export const LandingView = () => {
         {/* <Section3V2 /> */}
         <Chapter2 />
         <Chapter3 />
+
         <WorldFirst />
       </Stack>
 

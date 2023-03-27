@@ -5,6 +5,9 @@ import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 import car from "@/assets/Car.png";
 import Image from "next/image";
+import { Roll001 } from "@/ui/three-models/roll001";
+import { Roll002 } from "@/ui/roll002/Roll002";
+import { Roll003 } from "@/ui/roll03/Roll003";
 
 export const Chapter1 = () => {
   return (
@@ -17,6 +20,15 @@ export const Chapter1 = () => {
       </Stack>
       <Stack>
         <Stack css={sx.imageWrap}>
+          <div css={sx.roll1}>
+            <Roll001 />
+          </div>
+          <div css={sx.roll2}>
+            <Roll002 />
+          </div>
+          <div css={sx.roll3}>
+            <Roll003 />
+          </div>
           <div css={sx.car}>
             <Image src={car} alt="car" fill sizes="100" />
           </div>
@@ -93,11 +105,43 @@ const sx = {
   `,
   imageWrap: css`
     align-items: center;
+    position: relative;
+  `,
+  //
+  roll1: css`
+    position: absolute;
+    top: 12vw;
+    left: 62vw;
+    width: 16vw;
+    aspect-ratio: 1;
+  `,
+  roll2: css`
+    position: absolute;
+    top: -5vw;
+    left: 62vw;
+    width: 16vw;
+    aspect-ratio: 1;
+  `,
+  roll3: css`
+    position: absolute;
+    top: 5vw;
+    left: 16vw;
+    width: 16vw;
+    aspect-ratio: 1;
   `,
   car: css`
     position: relative;
     width: 50vw;
     height: 22vw;
+    animation: car 2s infinite alternate;
+    @keyframes car {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
   `,
   textWrap: css`
     padding: 0 8.333vw;
