@@ -6,8 +6,8 @@ import { Stack } from "@mui/system";
 import car from "@/assets/Car.png";
 import Image from "next/image";
 import { Roll001 } from "@/ui/three-models/roll001";
-import { Roll002 } from "@/ui/roll002/Roll002";
-import { Roll003 } from "@/ui/roll03/Roll003";
+import { Roll002 } from "@/ui/three-models/roll002/Roll002";
+import { Roll003 } from "@/ui/three-models/roll03/Roll003";
 
 export const Chapter1 = () => {
   return (

@@ -2,6 +2,11 @@ import { ChapterTitle } from "@/common/components/chapterTitle";
 import { Stack, Typography } from "@mui/material";
 import { css } from "@emotion/react";
 import { Mq } from "@/common/theme/screen";
+import { CarSeat } from "@/ui/three-models/carSeat/CarSeat";
+import { GolfBAg } from "@/ui/three-models/golfBag/GolfBag";
+import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
+import { Purse } from "@/ui/three-models/purse/Purse";
+import { Chair } from "@/ui/three-models/chair/Chair";
 
 export const Chapter3 = () => {
   return (
@@ -53,6 +58,21 @@ export const Chapter3 = () => {
       </Typography>
       <Stack css={sx.bottom}>
         <Image3 />
+        <div css={sx.carSeat}>
+          <CarSeat />
+        </div>
+        <div css={sx.golfBag}>
+          <GolfBAg />
+        </div>
+        <div css={sx.menJacket}>
+          <MenJacket />
+        </div>
+        <div css={sx.purse}>
+          <Purse />
+        </div>
+        <div css={sx.chair}>
+          <Chair />
+        </div>
         <Typography
           variant="body1"
           css={sx.text3}
@@ -141,6 +161,88 @@ const sx = {
   bottom: css`
     align-items: center;
     margin-top: 15vw;
+    position: relative;
+  `,
+  carSeat: css`
+    position: absolute;
+    right: 25vw;
+    top: 11vw;
+    width: 27vw;
+    aspect-ratio: 1;
+    animation: carSeat 2s infinite alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
+  `,
+
+  golfBag: css`
+    position: absolute;
+    left: 25vw;
+    top: 7vw;
+    width: 35vw;
+    aspect-ratio: 1;
+    animation: carSeat 1.5s infinite alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
+  `,
+  menJacket: css`
+    position: absolute;
+    left: 12vw;
+    top: -5vw;
+    width: 20vw;
+    aspect-ratio: 1;
+    animation: carSeat 1.5s infinite alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
+  `,
+  purse: css`
+    position: absolute;
+    left: 32vw;
+    top: -15vw;
+    width: 30vw;
+    aspect-ratio: 1;
+    animation: carSeat 1.5s infinite alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
+  `,
+  chair: css`
+    position: absolute;
+    right: 5vw;
+    top: -15vw;
+    width: 18vw;
+    aspect-ratio: 1;
+    animation: carSeat 1.5s infinite alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
   `,
   text3: css`
     text-align: center;

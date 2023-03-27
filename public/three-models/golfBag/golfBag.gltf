@@ -1,0 +1,666 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 11850,
+      "max": [
+        0.5994871258735657,
+        0.96952885389328,
+        4.919556140899658
+      ],
+      "min": [
+        -0.5999301075935364,
+        -0.9695273041725159,
+        4.618529796600342
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 142200,
+      "componentType": 5126,
+      "count": 11850,
+      "max": [
+        0.9976663589477539,
+        0.9964630603790283,
+        0.9922434687614441
+      ],
+      "min": [
+        -0.9999521970748901,
+        -0.9964632987976074,
+        -0.9970517158508301
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 11850,
+      "max": [
+        0.6524355411529541,
+        0.949491560459137
+      ],
+      "min": [
+        0.4710790812969208,
+        0.7675920724868774
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 32790,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 284400,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        0.3803331255912781,
+        1.9172974824905396,
+        4.662598133087158
+      ],
+      "min": [
+        -0.5944371819496155,
+        -1.9172965288162231,
+        2.230254650115967
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 309456,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        0.9999638199806213,
+        0.7228118181228638,
+        0.9527084827423096
+      ],
+      "min": [
+        -0.9999857544898987,
+        -0.7228108644485474,
+        -0.9536417126655579
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 94800,
+      "componentType": 5126,
+      "count": 2088,
+      "max": [
+        0.38755038380622864,
+        4.518801689147949
+      ],
+      "min": [
+        0.0567232221364975,
+        -2.512843132019043
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 131160,
+      "componentType": 5125,
+      "count": 11040,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 334512,
+      "componentType": 5126,
+      "count": 63551,
+      "max": [
+        1.1109687089920044,
+        1.2590254545211792,
+        5.4117431640625
+      ],
+      "min": [
+        -1.2719730138778687,
+        -1.328536868095398,
+        -1.3682534927283996e-07
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1097124,
+      "componentType": 5126,
+      "count": 63551,
+      "max": [
+        0.9999991059303284,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 111504,
+      "componentType": 5126,
+      "count": 63551,
+      "max": [
+        8.115407943725586,
+        2.3690414428710938
+      ],
+      "min": [
+        0.024682283401489258,
+        -1.3690412044525146
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 175320,
+      "componentType": 5125,
+      "count": 347982,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1859736,
+      "componentType": 5126,
+      "count": 254,
+      "max": [
+        0.7282260060310364,
+        0.7282268404960632,
+        5.2430419921875
+      ],
+      "min": [
+        -0.7282260060310364,
+        -0.7282251715660095,
+        1.3062129020690918
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1862784,
+      "componentType": 5126,
+      "count": 254,
+      "max": [
+        0.9991662502288818,
+        0.9993479251861572,
+        0.041622430086135864
+      ],
+      "min": [
+        -0.9991661310195923,
+        -0.999347984790802,
+        0.032277725636959076
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 619912,
+      "componentType": 5126,
+      "count": 254,
+      "max": [
+        0.9685941934585571,
+        0.6854330897331238
+      ],
+      "min": [
+        0.4705137610435486,
+        0.29445573687553406
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1567248,
+      "componentType": 5125,
+      "count": 738,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1865832,
+      "componentType": 5126,
+      "count": 8792,
+      "max": [
+        1.0251588821411133,
+        0.7435790300369263,
+        2.2349114418029785
+      ],
+      "min": [
+        -0.9617167711257935,
+        -1.0026174783706665,
+        -4.727455139160156
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1971336,
+      "componentType": 5126,
+      "count": 8792,
+      "max": [
+        0.999779999256134,
+        0.9998727440834045,
+        0.9999088644981384
+      ],
+      "min": [
+        -0.9998152852058411,
+        -0.999977707862854,
+        -0.9998270869255066
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 621944,
+      "componentType": 5126,
+      "count": 8792,
+      "max": [
+        0.9585963487625122,
+        0.9495531916618347
+      ],
+      "min": [
+        0.013181507587432861,
+        0.00895502045750618
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1570200,
+      "componentType": 5125,
+      "count": 46548,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "mikethornley (https://sketchfab.com/mikethornley)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/golf-bag-12113d34eca34f619dfcafaf9ae36a2a",
+      "title": "Golf Bag"
+    },
+    "generator": "Sketchfab-13.4.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1756392,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 692280,
+      "byteOffset": 1756392,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2076840,
+      "byteOffset": 2448672,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4525512,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/golf_bag_metal_diffuse.jpeg"
+    },
+    {
+      "uri": "textures/golf_bag_diffuse.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 0.042294850537622566,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "name": "golf_bag_metal"
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 1
+          },
+          "glossinessFactor": 0.042294850537622566,
+          "specularFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "specularGlossinessTexture": {
+            "index": 1
+          }
+        }
+      },
+      "name": "golf_bag"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "golf_bag_straps_golf_bag_metal_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "golf_bag_straps_golf_bag_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "golf_bag_golf_bag_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Default group initialShadingGroup polySurface1445 polySurface14_golf_bag_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "golf_clubs_golf_bag_metal_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "golf_bag.fbx"
+    },
+    {
+      "children": [
+        3,
+        6,
+        8,
+        10
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -9.739011764526367,
+        0.0,
+        -15.076208114624023,
+        1.0
+      ],
+      "name": "golf_bag_straps"
+    },
+    {
+      "mesh": 0,
+      "name": "golf_bag_straps_golf_bag_metal_0"
+    },
+    {
+      "mesh": 1,
+      "name": "golf_bag_straps_golf_bag_0"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -9.739011764526367,
+        0.0,
+        -15.076208114624023,
+        1.0
+      ],
+      "name": "golf_bag"
+    },
+    {
+      "mesh": 2,
+      "name": "golf_bag_golf_bag_0"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -9.739011764526367,
+        0.0,
+        -15.076208114624023,
+        1.0
+      ],
+      "name": "Default group initialShadingGroup polySurface1445 polySurface14"
+    },
+    {
+      "mesh": 3,
+      "name": "Default group initialShadingGroup polySurface1445 polySurface14_golf_bag_0"
+    },
+    {
+      "children": [
+        11
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -1.629206793918314e-05,
+        -99.99999999999868,
+        0.0,
+        0.0,
+        99.99999999999868,
+        -1.629206793918314e-05,
+        0.0,
+        -28.712636947631836,
+        517.03125,
+        -11.310258865356445,
+        1.0
+      ],
+      "name": "golf_clubs"
+    },
+    {
+      "mesh": 4,
+      "name": "golf_clubs_golf_bag_metal_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}

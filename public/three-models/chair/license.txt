@@ -1,0 +1,8 @@
+Model Information:
+* title:	Crate&Barrel Verso Armchair
+* source:	https://sketchfab.com/3d-models/cratebarrel-verso-armchair-e52d1398fa5e4eab85f9a5962cc701d8
+* author:	3detto (https://sketchfab.com/3detto)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

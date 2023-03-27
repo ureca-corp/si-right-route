@@ -1,0 +1,11 @@
+Model Information:
+* title:	Car Seat Complete V1
+* source:	https://sketchfab.com/3d-models/car-seat-complete-v1-a1c78603995e4aa7b858bbceb4e0f3a1
+* author:	MBanzhoff (https://sketchfab.com/MBanzhoff)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Car Seat Complete V1" (https://sketchfab.com/3d-models/car-seat-complete-v1-a1c78603995e4aa7b858bbceb4e0f3a1) by MBanzhoff (https://sketchfab.com/MBanzhoff) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
