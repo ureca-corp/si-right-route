@@ -91,7 +91,7 @@ const sx = {
     align-items: center;
   `,
   world: css`
-    margin-top: 20.833vw;
+    margin-top: 15.833vw;
     line-height: 6.667vw;
     @media ${Mq.md} {
       margin-bottom: 10px;
@@ -114,7 +114,7 @@ const sx = {
   line: css`
     position: relative;
     width: 1px;
-    height: 26.042vw;
+    height: 21.042vw;
     font-weight: 700;
     margin-bottom: 2vw;
   `,

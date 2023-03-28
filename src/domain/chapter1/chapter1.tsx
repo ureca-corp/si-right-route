@@ -207,7 +207,7 @@ const sx = {
     font-size: 10px !important;
   `,
   bottom: css`
-    margin: 33vw 8.333vw 0 8.333vw;
+    margin: 15vw 8.333vw 0 8.333vw;
     line-height: 28px;
     @media ${Mq.sm} {
       margin: 180px 8.333vw 80px 8.333vw;

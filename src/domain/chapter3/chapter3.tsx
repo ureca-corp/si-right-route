@@ -185,7 +185,7 @@ const sx = {
 
   golfBag: css`
     position: absolute;
-    left: 25vw;
+    left: 20vw;
     top: 7vw;
     width: 35vw;
     aspect-ratio: 1;
@@ -250,7 +250,7 @@ const sx = {
   coat: css`
     position: absolute;
     right: -4vw;
-    bottom: -38vw;
+    top: 3vw;
     width: 48vw;
     aspect-ratio: 1;
     animation: carSeat 1.7s infinite alternate;
@@ -265,7 +265,7 @@ const sx = {
   `,
   text3: css`
     text-align: center;
-    margin-top: 10vw;
+    margin-top: 37vw;
     line-height: 50px;
     @media ${Mq.xs} {
       padding: 0 16px;
