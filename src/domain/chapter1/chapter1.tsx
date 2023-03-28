@@ -70,7 +70,7 @@ export const Chapter1 = () => {
           </Typography>
           <video
             css={sx.video}
-            src="/assets/roll_video.mp4"
+            src="/assets/rolls.mp4"
             autoPlay
             muted
             loop
@@ -172,10 +172,10 @@ const sx = {
     position: relative;
   `,
   video: css`
-    /* position: absolute;
+    position: absolute;
     bottom: 0;
-    left: 0; */
-    width: 500px;
+    left: 0;
+    width: 100%;
   `,
   year: css`
     font-family: "Noto Sans KR";
