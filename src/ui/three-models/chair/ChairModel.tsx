@@ -16,7 +16,7 @@ export default function ChairModel() {
   });
 
   return (
-    <mesh ref={refMesh} rotation={[Math.PI / 3, -10.5, 12.2]}>
+    <mesh ref={refMesh} rotation={[Math.PI / -0.1, -0.2, 0.1]}>
       <primitive object={gltf.scene} scale={4} />;
     </mesh>
   );

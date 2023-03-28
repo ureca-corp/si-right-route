@@ -7,6 +7,7 @@ import { GolfBAg } from "@/ui/three-models/golfBag/GolfBag";
 import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
 import { Purse } from "@/ui/three-models/purse/Purse";
 import { Chair } from "@/ui/three-models/chair/Chair";
+import { Coat } from "@/ui/three-models/coat/Coat";
 
 export const Chapter3 = () => {
   return (
@@ -57,7 +58,6 @@ export const Chapter3 = () => {
         }
       </Typography>
       <Stack css={sx.bottom}>
-        <Image3 />
         <div css={sx.carSeat}>
           <CarSeat />
         </div>
@@ -72,6 +72,9 @@ export const Chapter3 = () => {
         </div>
         <div css={sx.chair}>
           <Chair />
+        </div>
+        <div css={sx.coat}>
+          <Coat />
         </div>
         <Typography
           variant="body1"
@@ -230,11 +233,27 @@ const sx = {
   `,
   chair: css`
     position: absolute;
-    right: 5vw;
-    top: -15vw;
+    right: 21vw;
+    top: -5vw;
     width: 18vw;
     aspect-ratio: 1;
     animation: carSeat 1.5s infinite alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 20px);
+      }
+    }
+  `,
+  coat: css`
+    position: absolute;
+    right: -4vw;
+    bottom: -38vw;
+    width: 48vw;
+    aspect-ratio: 1;
+    animation: carSeat 1.7s infinite alternate;
     @keyframes carSeat {
       0% {
         transform: translate(0, 0);

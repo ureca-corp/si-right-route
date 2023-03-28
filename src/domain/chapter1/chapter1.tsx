@@ -48,6 +48,7 @@ export const Chapter1 = () => {
             }
           </Typography>
         </Stack>
+
         <Stack css={sx.middle} data-aos={"fade-up"} data-aos-duration="2000">
           <Typography variant="h2" component={"div"}>
             <span css={sx.year}>2030</span>년 세계 분리막 생산량
@@ -67,7 +68,15 @@ export const Chapter1 = () => {
           <Typography css={sx.seperate}>
             {"(분리막 폐기물 5%로 추정 산출)"}
           </Typography>
+          <video
+            css={sx.video}
+            src="/assets/roll_video.mp4"
+            autoPlay
+            muted
+            loop
+          ></video>
         </Stack>
+
         <Typography
           css={sx.bottom}
           variant="body2"
@@ -160,8 +169,14 @@ const sx = {
     align-items: center;
     text-align: center;
     word-break: keep-all;
+    position: relative;
   `,
-
+  video: css`
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    width: 500px;
+  `,
   year: css`
     font-family: "Noto Sans KR";
   `,
