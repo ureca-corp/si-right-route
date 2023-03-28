@@ -176,6 +176,7 @@ const sx = {
     bottom: 0;
     left: 0;
     width: 100%;
+    bottom: -32vw;
   `,
   year: css`
     font-family: "Noto Sans KR";
@@ -207,7 +208,7 @@ const sx = {
     font-size: 10px !important;
   `,
   bottom: css`
-    margin: 15vw 8.333vw 0 8.333vw;
+    margin: 41vw 8.333vw 0 8.333vw;
     line-height: 28px;
     @media ${Mq.sm} {
       margin: 180px 8.333vw 80px 8.333vw;
