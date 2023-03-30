@@ -26,7 +26,7 @@ export const Chapter2 = () => {
         </Typography>
       </Stack>
       <Stack css={sx.imageWrap}>
-        <RecycleImage />
+        <video css={sx.video} src="/assets/ch2_video.mp4" autoPlay muted loop />
       </Stack>
       <Stack css={sx.textWrap} data-aos={"fade-down"} data-aos-duration="1500">
         <Typography css={sx.bottomText} variant="body2">
@@ -65,6 +65,9 @@ const sx = {
   imageWrap: css`
     display: flex;
     align-items: center;
+  `,
+  video: css`
+    width: 50vw;
   `,
   bottomText: css`
     margin: 5vw 0 10vw 0;
