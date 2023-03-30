@@ -8,6 +8,11 @@ import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
 import { Purse } from "@/ui/three-models/purse/Purse";
 import { Chair } from "@/ui/three-models/chair/Chair";
 import { Coat } from "@/ui/three-models/coat/Coat";
+import recycle from "@/assets/recycle_logo.png";
+import Image from "next/image";
+import cloth from "@/assets/cloth.png";
+import thread1 from "@/assets/thread1.png";
+import thread2 from "@/assets/thread2.png";
 
 export const Chapter3 = () => {
   return (
@@ -40,12 +45,25 @@ export const Chapter3 = () => {
         data-aos-duration="1500"
       >
         {
-          "텍스닉 섬유 소재는 재활용이 어려운 폐 배터리 분리막을 부가가치 높은 제품으로 개발한 최초 사례입니다.\n택스닉이 재활용하지 않았다면 소각되어 환경오염을 유발하는 폐 분리막이 텍스닉의 기술을 만나\n탄소 배출이 저감되는 기능성 리사이클 소재로 재탄생하였습니다. 자원의 수명을 연장한 친환경 소재이면서도 방수-투습, 경량성, 내구성이 우수한 기능성 소재입니다"
+          "텍스닉 섬유 소재는 재활용이 어려운 폐 배터리 분리막을 부가가치 높은 제품으로 개발한 최초 사례입니다.\n텍스닉이 재활용하지 않았다면 소각되어 환경오염을 유발하는 폐 분리막이 텍스닉의 기술을 만나\n탄소 배출이 저감되는 기능성 리사이클 소재로 재탄생하였습니다. 자원의 수명을 연장한 친환경 소재이면서도 방수-투습, 경량성, 내구성이 우수한 기능성 소재입니다"
         }
       </Typography>
       <div css={sx.ImageWrap}>
-        <Image1 />
-        <Image2 />
+        <div css={sx.recycle}>
+          <Image src={recycle} alt="recycle" fill sizes="100" />
+        </div>
+        <div css={sx.cloth}>
+          <Image src={cloth} alt="cloth" fill sizes="100" />
+        </div>
+        <div css={sx.thread1}>
+          <Image src={thread1} alt="thread" fill sizes="100" />
+        </div>
+        <div css={sx.thread2}>
+          <Image src={thread2} alt="thread" fill sizes="100"></Image>
+        </div>
+        <div css={sx.thread3}>
+          <Image src={thread2} alt="thread" fill sizes="100"></Image>
+        </div>
       </div>
       <Typography
         css={sx.text2}
@@ -139,28 +157,99 @@ const sx = {
     margin-bottom: 9vw;
   `,
   text2: css`
-    margin: 0 8.333vw;
+    margin: 9vw 8.333vw 0 8.333vw;
     line-height: 30px;
   `,
   ImageWrap: css`
-    margin-left: 20vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
   `,
-  image1: css`
+  recycle: css`
+    position: relative;
     width: 43vw;
-    height: 23vw;
-    background-color: #ccc;
-  `,
-  image2: css`
-    width: 35vw;
     height: 24vw;
-    background-color: #423a3a;
-    transform: translate(30vw, -10vw);
+    animation: spin 5.5s infinite linear;
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   `,
-  image3: css`
-    width: 43vw;
-    height: 23vw;
-    background-color: #ccc;
+
+  cloth: css`
+    width: 18vw;
+    height: 12vw;
+    position: absolute;
+    top: 7vw;
+    left: 27vw;
+    animation: carSeat 1.5s infinite linear alternate;
+    @keyframes carSeat {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0, 25px);
+      }
+    }
   `,
+  thread1: css`
+    width: 10vw;
+    height: 11vw;
+    position: absolute;
+    top: 0;
+    right: 33vw;
+
+    animation: thread1 1.7s infinite linear alternate;
+    @keyframes thread1 {
+      0% {
+        transform: rotate(15deg) translate(0, 0);
+      }
+      100% {
+        transform: rotate(15deg) translate(0, 20px);
+      }
+    }
+  `,
+  thread2: css`
+    width: 10vw;
+    height: 10.5vw;
+    position: absolute;
+    top: 12vw;
+    right: 33vw;
+    /* transform: rotate(-15deg); */
+    z-index: 5;
+    animation: thread2 2.5s infinite linear alternate;
+    @keyframes thread2 {
+      0% {
+        transform: rotate(-15deg) translate(0, 0);
+      }
+      100% {
+        transform: rotate(-15deg) translate(0, 25px);
+      }
+    }
+  `,
+  thread3: css`
+    width: 8vw;
+    height: 9vw;
+    position: absolute;
+    top: 8vw;
+    right: 30vw;
+    z-index: 0;
+    animation: thread3 2.5s infinite linear alternate;
+    @keyframes thread3 {
+      0% {
+        transform: rotate(15deg) translate(0, 0);
+      }
+      100% {
+        transform: rotate(15deg) translate(0, 25px);
+      }
+    }
+  `,
+
   bottom: css`
     align-items: center;
     margin-top: 15vw;
@@ -276,15 +365,4 @@ const sx = {
 
 const MaterialImage = () => {
   return <div css={sx.materialImage} />;
-};
-
-const Image1 = () => {
-  return <div css={sx.image1} />;
-};
-const Image2 = () => {
-  return <div css={sx.image2} />;
-};
-
-const Image3 = () => {
-  return <div css={sx.image3} />;
 };
