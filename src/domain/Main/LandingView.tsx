@@ -1,13 +1,12 @@
-import { css } from "@emotion/react";
-import { Chapter2 } from "../chapter2/chapter2";
-import { Intro } from "../intro/intro";
-import { Chapter1 } from "../chapter1/chapter1";
-import { Section3V2 } from "../section3/section3-v2";
-import { WorldFirst } from "../worldFirst/WorldFirst";
 import bg from "@/assets/bg.png";
-import Image from "next/image";
+import { css } from "@emotion/react";
 import { Stack } from "@mui/material";
-import { Chapter3 } from "../chapter3/chapter3";
+import Image from "next/image";
+import { Chapter1 } from "../chapter1/chapter1";
+import { Chapter2 } from "../chapter2/chapter2";
+import { Chapter3V2 } from "../chapter3/chapter3v2";
+import { Intro } from "../intro/intro";
+import { WorldFirst } from "../worldFirst/WorldFirst";
 
 export const LandingView = () => {
   return (
@@ -15,9 +14,8 @@ export const LandingView = () => {
       <Stack css={sx.contentWrap}>
         <Intro />
         <Chapter1 />
-        {/* <Section3V2 /> */}
         <Chapter2 />
-        <Chapter3 />
+        <Chapter3V2 />
 
         <WorldFirst />
       </Stack>
@@ -31,7 +29,6 @@ export const LandingView = () => {
 
 const sx = {
   root: css`
-    /* background-color: #000; */
     position: relative;
   `,
   contentWrap: css`
