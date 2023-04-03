@@ -105,26 +105,27 @@ const sx = {
   imageWrap: css`
     align-items: center;
     position: relative;
+    width: 100%;
   `,
   //
   roll1: css`
     position: absolute;
     top: 12vw;
-    left: 52vw;
+    right: -4vw;
     width: 16vw;
     aspect-ratio: 1;
   `,
   roll2: css`
     position: absolute;
     top: -5vw;
-    left: 52vw;
+    right: -4vw;
     width: 16vw;
     aspect-ratio: 1;
   `,
   roll3: css`
     position: absolute;
     top: 5vw;
-    left: -1vw;
+    left: -5vw;
     width: 16vw;
     aspect-ratio: 1;
   `,
