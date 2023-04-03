@@ -8,8 +8,10 @@ import bg from "@/assets/bg.png";
 import Image from "next/image";
 import { Stack } from "@mui/material";
 import { Chapter3 } from "../chapter3/chapter3";
+import { useCustomMediaQuery } from "@/common/theme/screen";
 
 export const LandingView = () => {
+  const { isSmall } = useCustomMediaQuery();
   return (
     <div css={sx.root}>
       <Stack css={sx.contentWrap}>
@@ -21,10 +23,11 @@ export const LandingView = () => {
 
         <WorldFirst />
       </Stack>
-
-      <div css={sx.bg}>
-        <Image src={bg} alt="bg" fill sizes="100" />
-      </div>
+      {isSmall ? null : (
+        <div css={sx.bg}>
+          <Image src={bg} alt="bg" fill sizes="100" />
+        </div>
+      )}
     </div>
   );
 };
