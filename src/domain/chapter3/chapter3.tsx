@@ -16,100 +16,109 @@ import thread2 from "@/assets/thread2.png";
 
 export const Chapter3 = () => {
   return (
-    <div>
-      <Stack css={sx.top}>
-        <Stack css={sx.chaptorWrap}>
-          <ChapterTitle numb={3} />
-          <Typography css={sx.title} variant="h5">
-            무한한 가능성
-          </Typography>
-        </Stack>
-        <Stack css={sx.oneOfaKindWrap}>
-          <Stack
-            css={sx.textWrap}
-            data-aos={"fade-up"}
-            data-aos-duration="2000"
-          >
-            <Typography variant="h6">One-of-a-Kind</Typography>
-            <Typography variant="h1">RECYCLED</Typography>
-            <Typography variant="h2">Functional</Typography>
-            <Typography variant="h1">MATERIAL</Typography>
+    <div css={sx.root}>
+      <div css={sx.inner}>
+        <Stack css={sx.top}>
+          <Stack css={sx.chaptorWrap}>
+            <ChapterTitle numb={3} />
+            <Typography css={sx.title} variant="h5">
+              무한한 가능성
+            </Typography>
           </Stack>
-          <MaterialImage />
+          <Stack css={sx.oneOfaKindWrap}>
+            <Stack
+              css={sx.textWrap}
+              data-aos={"fade-up"}
+              data-aos-duration="2000"
+            >
+              <Typography variant="h6">One-of-a-Kind</Typography>
+              <Typography variant="h1">RECYCLED</Typography>
+              <Typography variant="h2">Functional</Typography>
+              <Typography variant="h1">MATERIAL</Typography>
+            </Stack>
+            <MaterialImage />
+          </Stack>
         </Stack>
-      </Stack>
-      <Typography
-        css={sx.text1}
-        variant="body2"
-        data-aos="fade-down"
-        data-aos-duration="1500"
-      >
-        {
-          "텍스닉 섬유 소재는 재활용이 어려운 폐 배터리 분리막을 부가가치 높은 제품으로 개발한 최초 사례입니다.\n텍스닉이 재활용하지 않았다면 소각되어 환경오염을 유발하는 폐 분리막이 텍스닉의 기술을 만나\n탄소 배출이 저감되는 기능성 리사이클 소재로 재탄생하였습니다. 자원의 수명을 연장한 친환경 소재이면서도 방수-투습, 경량성, 내구성이 우수한 기능성 소재입니다"
-        }
-      </Typography>
-      <div css={sx.ImageWrap}>
-        <div css={sx.recycle}>
-          <Image src={recycle} alt="recycle" fill sizes="100" />
-        </div>
-        <div css={sx.cloth}>
-          <Image src={cloth} alt="cloth" fill sizes="100" />
-        </div>
-        <div css={sx.thread1}>
-          <Image src={thread1} alt="thread" fill sizes="100" />
-        </div>
-        <div css={sx.thread2}>
-          <Image src={thread2} alt="thread" fill sizes="100"></Image>
-        </div>
-        <div css={sx.thread3}>
-          <Image src={thread2} alt="thread" fill sizes="100"></Image>
-        </div>
-      </div>
-      <Typography
-        css={sx.text2}
-        variant="body2"
-        data-aos="fade-down"
-        data-aos-duration="1500"
-      >
-        {
-          "현재에서 멈추지 않고 폐 배터리 분리막을 다양한 형태로 개발하기 위해 우리는 끊임없이 도전합니다.\n패션 제품부터 아웃도어, 인테리어, 자동차 시트까지 다양한 분야로 전개 가능한 놀라운 확장성을 갖춘\nNEW RECYCLING SOLUTION,TEXNIC®의 행보를 지켜봐 주세요."
-        }
-      </Typography>
-      <Stack css={sx.bottom}>
-        <div css={sx.carSeat}>
-          <CarSeat />
-        </div>
-        <div css={sx.golfBag}>
-          <GolfBAg />
-        </div>
-        <div css={sx.menJacket}>
-          <MenJacket />
-        </div>
-        <div css={sx.purse}>
-          <Purse />
-        </div>
-        <div css={sx.chair}>
-          <Chair />
-        </div>
-        <div css={sx.coat}>
-          <Coat />
-        </div>
         <Typography
-          variant="body1"
-          css={sx.text3}
+          css={sx.text1}
+          variant="body2"
           data-aos="fade-down"
           data-aos-duration="1500"
         >
           {
-            "우리가 함께 살아가는 플래닛 지구를 위해,\n텍스닉 만의 방식으로 고정관념을 깨고 움츠린 가능성의 한계를 넘어 혁신적인 리사이클 솔루션을  제시해나갈 것입니다."
+            "텍스닉 섬유 소재는 재활용이 어려운 폐 배터리 분리막을 부가가치 높은 제품으로 개발한 최초 사례입니다.\n텍스닉이 재활용하지 않았다면 소각되어 환경오염을 유발하는 폐 분리막이 텍스닉의 기술을 만나\n탄소 배출이 저감되는 기능성 리사이클 소재로 재탄생하였습니다. 자원의 수명을 연장한 친환경 소재이면서도 방수-투습, 경량성, 내구성이 우수한 기능성 소재입니다"
           }
         </Typography>
-      </Stack>
+        <div css={sx.ImageWrap}>
+          <div css={sx.recycle}>
+            <Image src={recycle} alt="recycle" fill sizes="100" />
+          </div>
+          <div css={sx.cloth}>
+            <Image src={cloth} alt="cloth" fill sizes="100" />
+          </div>
+          <div css={sx.thread1}>
+            <Image src={thread1} alt="thread" fill sizes="100" />
+          </div>
+          <div css={sx.thread2}>
+            <Image src={thread2} alt="thread" fill sizes="100"></Image>
+          </div>
+          <div css={sx.thread3}>
+            <Image src={thread2} alt="thread" fill sizes="100"></Image>
+          </div>
+        </div>
+        <Typography
+          css={sx.text2}
+          variant="body2"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          {
+            "현재에서 멈추지 않고 폐 배터리 분리막을 다양한 형태로 개발하기 위해 우리는 끊임없이 도전합니다.\n패션 제품부터 아웃도어, 인테리어, 자동차 시트까지 다양한 분야로 전개 가능한 놀라운 확장성을 갖춘\nNEW RECYCLING SOLUTION,TEXNIC®의 행보를 지켜봐 주세요."
+          }
+        </Typography>
+        <Stack css={sx.bottom}>
+          <div css={sx.carSeat}>
+            <CarSeat />
+          </div>
+          <div css={sx.golfBag}>
+            <GolfBAg />
+          </div>
+          <div css={sx.menJacket}>
+            <MenJacket />
+          </div>
+          <div css={sx.purse}>
+            <Purse />
+          </div>
+          <div css={sx.chair}>
+            <Chair />
+          </div>
+          <div css={sx.coat}>
+            <Coat />
+          </div>
+          <Typography
+            variant="body1"
+            css={sx.text3}
+            data-aos="fade-down"
+            data-aos-duration="1500"
+          >
+            {
+              "우리가 함께 살아가는 플래닛 지구를 위해,\n텍스닉 만의 방식으로 고정관념을 깨고 움츠린 가능성의 한계를 넘어 혁신적인 리사이클 솔루션을  제시해나갈 것입니다."
+            }
+          </Typography>
+        </Stack>
+      </div>
     </div>
   );
 };
 
 const sx = {
+  root: css`
+    padding: 0 8.333vw;
+  `,
+  inner: css`
+    max-width: 1030px;
+    margin: 0 auto;
+  `,
   chaptorWrap: css`
     align-items: center;
   `,
@@ -151,14 +160,12 @@ const sx = {
     }
   `,
   text1: css`
-    padding: 0 8.333vw;
     margin-top: 9vw;
     line-height: 32px;
     margin-bottom: 9vw;
   `,
   text2: css`
-    margin: 9vw 8.333vw 0 8.333vw;
-    line-height: 30px;
+    margin: 9vw 0 0 0;
   `,
   ImageWrap: css`
     display: flex;
@@ -186,7 +193,7 @@ const sx = {
     height: 12vw;
     position: absolute;
     top: 7vw;
-    left: 27vw;
+    left: 8vw;
     animation: carSeat 1.5s infinite linear alternate;
     @keyframes carSeat {
       0% {
@@ -202,7 +209,7 @@ const sx = {
     height: 11vw;
     position: absolute;
     top: 0;
-    right: 33vw;
+    right: 12vw;
 
     animation: thread1 1.7s infinite linear alternate;
     @keyframes thread1 {
@@ -219,7 +226,7 @@ const sx = {
     height: 10.5vw;
     position: absolute;
     top: 12vw;
-    right: 33vw;
+    right: 12vw;
     /* transform: rotate(-15deg); */
     z-index: 5;
     animation: thread2 2.5s infinite linear alternate;
@@ -237,7 +244,7 @@ const sx = {
     height: 9vw;
     position: absolute;
     top: 8vw;
-    right: 30vw;
+    right: 9vw;
     z-index: 0;
     animation: thread3 2.5s infinite linear alternate;
     @keyframes thread3 {
