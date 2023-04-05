@@ -49,8 +49,9 @@ export const Chapter1 = () => {
               }
             </Typography>
           </Stack>
-
-          <Stack css={sx.middle} data-aos={"fade-up"} data-aos-duration="2000">
+          {/* 
+          <Stack css={sx.middle} data-aos={"fade-up"} data-aos-duration="2000"> */}
+          <Stack css={sx.middle}>
             <video
               css={sx.video}
               src="/assets/rolls.mp4"
@@ -107,25 +108,27 @@ const sx = {
     position: relative;
     width: 100%;
   `,
-  //
+
   roll1: css`
     position: absolute;
     top: 12vw;
-    right: -4vw;
+    right: 8vw;
     width: 16vw;
     aspect-ratio: 1;
+    @media ${Mq.xl} {
+    }
   `,
   roll2: css`
     position: absolute;
     top: -5vw;
-    right: -4vw;
+    right: 8vw;
     width: 16vw;
     aspect-ratio: 1;
   `,
   roll3: css`
     position: absolute;
     top: 5vw;
-    left: -5vw;
+    left: 5vw;
     width: 16vw;
     aspect-ratio: 1;
   `,
@@ -154,21 +157,22 @@ const sx = {
   text: css`
     margin: 1vw 0 0 0;
     @media ${Mq.sm} {
-      margin: 24px 0 130px 0;
+      margin: 18px 0 105px 0;
       line-height: 36px;
     }
   `,
   middle: css`
     align-items: center;
+    height: auto;
     text-align: center;
     word-break: keep-all;
     position: relative;
     margin-top: 5vw;
   `,
   video: css`
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; */
     width: 100%;
     bottom: -32vw;
   `,
@@ -202,10 +206,10 @@ const sx = {
     font-size: 10px !important;
   `,
   bottom: css`
-    margin-top: 41vw;
+    margin-top: 14vw;
     line-height: 28px;
     @media ${Mq.sm} {
-      margin: 180px 0 80px 0;
+      margin: 105px 0 80px 0;
       line-height: 36px;
     }
   `,

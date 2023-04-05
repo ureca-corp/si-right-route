@@ -4,7 +4,6 @@ import cloth from "@/assets/cloth.png";
 import recycle from "@/assets/recycle_logo.png";
 import thread1 from "@/assets/thread1.png";
 import thread2 from "@/assets/thread2.png";
-
 import { ChapterTitle } from "@/common/components/chapterTitle";
 import { CustomRoundCarousel } from "@/common/components/round-carousel";
 import { Mq } from "@/common/theme/screen";
@@ -16,6 +15,8 @@ import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
 import { Purse } from "@/ui/three-models/purse/Purse";
 import { css } from "@emotion/react";
 import { Stack, Typography } from "@mui/material";
+import new_recyle from "@/assets/new_recycle.png";
+import recyle_cloth from "@/assets/recycle_cloth.png";
 
 export const Chapter3V2 = () => {
   return (
@@ -29,17 +30,7 @@ export const Chapter3V2 = () => {
             </Typography>
           </Stack>
           <Stack css={st.oneOfaKindWrap}>
-            <Stack
-              css={st.textWrap}
-              data-aos={"fade-up"}
-              data-aos-duration="2000"
-            >
-              <Typography variant="h6">One-of-a-Kind</Typography>
-              <Typography variant="h1">RECYCLED</Typography>
-              <Typography variant="h2">Functional</Typography>
-              <Typography variant="h1">MATERIAL</Typography>
-            </Stack>
-            <MaterialImage />
+            <Image src={new_recyle} alt="meterial" fill sizes="100" />
           </Stack>
         </Stack>
         <Typography
@@ -53,21 +44,7 @@ export const Chapter3V2 = () => {
           }
         </Typography>
         <div css={st.ImageWrap}>
-          <div css={st.recycle}>
-            <Image src={recycle} alt="recycle" fill sizes="100" />
-          </div>
-          <div css={st.cloth}>
-            <Image src={cloth} alt="cloth" fill sizes="100" />
-          </div>
-          <div css={st.thread1}>
-            <Image src={thread1} alt="thread" fill sizes="100" />
-          </div>
-          <div css={st.thread2}>
-            <Image src={thread2} alt="thread" fill sizes="100"></Image>
-          </div>
-          <div css={st.thread3}>
-            <Image src={thread2} alt="thread" fill sizes="100"></Image>
-          </div>
+          <Image src={recyle_cloth} alt="logo" fill sizes="100" />
         </div>
         <Typography
           css={st.text2}
@@ -146,8 +123,13 @@ const st = {
     margin-top: 2vw;
   `,
   oneOfaKindWrap: css`
-    margin-top: 5vw;
+    width: 55vw;
+    height: 60vw;
     position: relative;
+    @media ${Mq.sm} {
+      width: 81vw;
+      height: 95vw;
+    }
   `,
   textWrap: css`
     position: absolute;
@@ -180,92 +162,13 @@ const st = {
     line-height: 30px;
   `,
   ImageWrap: css`
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    margin: 0 auto;
+    width: 35vw;
+    height: 30vw;
     position: relative;
-  `,
-  recycle: css`
-    position: relative;
-    width: 43vw;
-    height: 24vw;
-    animation: spin 5.5s infinite linear;
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  `,
-
-  cloth: css`
-    width: 18vw;
-    height: 12vw;
-    position: absolute;
-    top: 7vw;
-    left: 8vw;
-    animation: carSeat 1.5s infinite linear alternate;
-    @keyframes carSeat {
-      0% {
-        transform: translate(0, 0);
-      }
-      100% {
-        transform: translate(0, 25px);
-      }
-    }
-  `,
-  thread1: css`
-    width: 10vw;
-    height: 11vw;
-    position: absolute;
-    top: 0;
-    right: 12vw;
-
-    animation: thread1 1.7s infinite linear alternate;
-    @keyframes thread1 {
-      0% {
-        transform: rotate(15deg) translate(0, 0);
-      }
-      100% {
-        transform: rotate(15deg) translate(0, 20px);
-      }
-    }
-  `,
-  thread2: css`
-    width: 10vw;
-    height: 10.5vw;
-    position: absolute;
-    top: 12vw;
-    right: 12vw;
-    /* transform: rotate(-15deg); */
-    z-index: 5;
-    animation: thread2 2.5s infinite linear alternate;
-    @keyframes thread2 {
-      0% {
-        transform: rotate(-15deg) translate(0, 0);
-      }
-      100% {
-        transform: rotate(-15deg) translate(0, 25px);
-      }
-    }
-  `,
-  thread3: css`
-    width: 8vw;
-    height: 9vw;
-    position: absolute;
-    top: 8vw;
-    right: 9vw;
-    z-index: 0;
-    animation: thread3 2.5s infinite linear alternate;
-    @keyframes thread3 {
-      0% {
-        transform: rotate(15deg) translate(0, 0);
-      }
-      100% {
-        transform: rotate(15deg) translate(0, 25px);
-      }
+    @media ${Mq.sm} {
+      width: 60vw;
+      height: 55vw;
     }
   `,
 
