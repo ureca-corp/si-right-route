@@ -49,8 +49,7 @@ export const Chapter1 = () => {
               }
             </Typography>
           </Stack>
-          {/* 
-          <Stack css={sx.middle} data-aos={"fade-up"} data-aos-duration="2000"> */}
+
           <Stack css={sx.middle}>
             <video
               css={sx.video}
@@ -112,25 +111,32 @@ const sx = {
   roll1: css`
     position: absolute;
     top: 12vw;
-    right: 8vw;
+    right: -2vw;
     width: 16vw;
     aspect-ratio: 1;
     @media ${Mq.xl} {
+      right: 8vw;
     }
   `,
   roll2: css`
     position: absolute;
     top: -5vw;
-    right: 8vw;
+    right: -2vw;
     width: 16vw;
     aspect-ratio: 1;
+    @media ${Mq.xl} {
+      right: 8vw;
+    }
   `,
   roll3: css`
     position: absolute;
     top: 5vw;
-    left: 5vw;
+    left: -5vw;
     width: 16vw;
     aspect-ratio: 1;
+    @media ${Mq.xxl} {
+      left: 5vw;
+    }
   `,
   car: css`
     position: relative;
