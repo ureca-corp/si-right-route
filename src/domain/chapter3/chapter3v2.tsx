@@ -30,7 +30,7 @@ export const Chapter3V2 = () => {
             </Typography>
           </Stack>
           <Stack css={st.oneOfaKindWrap}>
-            <Image src={recyle_cloth} alt="meterial" fill sizes="100" />
+            <Image src={new_recycle} alt="meterial" fill sizes="100" />
           </Stack>
         </Stack>
         <Typography
@@ -44,7 +44,7 @@ export const Chapter3V2 = () => {
           }
         </Typography>
         <div css={st.ImageWrap}>
-          <Image src={new_recycle} alt="logo" fill sizes="100" />
+          <Image src={recyle_cloth} alt="logo" fill sizes="100" />
         </div>
         <Typography
           css={st.text2}
