@@ -15,7 +15,7 @@ import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
 import { Purse } from "@/ui/three-models/purse/Purse";
 import { css } from "@emotion/react";
 import { Stack, Typography } from "@mui/material";
-import new_recycle from "@/assets/new_recycle.png";
+import material from "@/assets/material.png";
 import recyle_cloth from "@/assets/recycle_cloth.png";
 
 export const Chapter3V2 = () => {
@@ -29,8 +29,8 @@ export const Chapter3V2 = () => {
               무한한 가능성
             </Typography>
           </Stack>
-          <Stack css={st.oneOfaKindWrap}>
-            <Image src={new_recycle} alt="meterial" fill sizes="100" />
+          <Stack css={st.materialWrap}>
+            <Image src={material} alt="material" fill sizes="100" />
           </Stack>
         </Stack>
         <Typography
@@ -122,7 +122,7 @@ const st = {
     align-items: baseline;
     margin-top: 2vw;
   `,
-  oneOfaKindWrap: css`
+  materialWrap: css`
     width: 55vw;
     height: 60vw;
     position: relative;
@@ -142,16 +142,6 @@ const st = {
     justify-content: center;
   `,
 
-  materialImage: css`
-    width: 52.083vw;
-    height: 36.458vw;
-    background-color: #ccc;
-    position: relative;
-    @media ${Mq.sm} {
-      width: 80.083vw;
-      height: 71.458vw;
-    }
-  `,
   text1: css`
     margin-top: 9vw;
     line-height: 32px;
@@ -280,8 +270,4 @@ const threeModelsStyle = {
       }
     }
   `,
-};
-
-const MaterialImage = () => {
-  return <div css={st.materialImage} />;
 };
