@@ -15,7 +15,7 @@ import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
 import { Purse } from "@/ui/three-models/purse/Purse";
 import { css } from "@emotion/react";
 import { Stack, Typography } from "@mui/material";
-import new_recyle from "@/assets/new_recycle.png";
+import new_recycle from "@/assets/new_recycle.png";
 import recyle_cloth from "@/assets/recycle_cloth.png";
 
 export const Chapter3V2 = () => {
@@ -30,7 +30,7 @@ export const Chapter3V2 = () => {
             </Typography>
           </Stack>
           <Stack css={st.oneOfaKindWrap}>
-            <Image src={new_recyle} alt="meterial" fill sizes="100" />
+            <Image src={new_recycle} alt="meterial" fill sizes="100" />
           </Stack>
         </Stack>
         <Typography
