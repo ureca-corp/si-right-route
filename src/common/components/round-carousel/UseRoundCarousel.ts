@@ -79,9 +79,11 @@ const getPointOnItem = (
   const angleIncrement = (2 * Math.PI) / numberOfPoints;
   const angle = targetIndex * angleIncrement + motionValue;
 
-  const tiltFactorOfY = 2.5;
+  const angleOffsetOfX = 60;
 
-  const x = center.x + radius * Math.cos(angle);
+  const tiltFactorOfY = 2.2;
+
+  const x = center.x + radius * Math.cos(angle + angleOffsetOfX);
   const y = center.y + (radius / tiltFactorOfY) * Math.sin(angle);
 
   return {
