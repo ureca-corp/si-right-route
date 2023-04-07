@@ -104,7 +104,7 @@ const st = {
     padding: 0 8.333vw;
   `,
   inner: css`
-    max-width: 1030px;
+    max-width: 803px;
     margin: 0 auto;
   `,
   chaptorWrap: css`
@@ -124,7 +124,7 @@ const st = {
   `,
   materialWrap: css`
     width: 55vw;
-    height: 60vw;
+    aspect-ratio: 1/ 1.559;
     position: relative;
     @media ${Mq.sm} {
       width: 81vw;
@@ -153,8 +153,8 @@ const st = {
   `,
   ImageWrap: css`
     margin: 0 auto;
-    width: 35vw;
-    height: 30vw;
+    width: 43vw;
+    aspect-ratio: 1/ 0.929;
     position: relative;
     @media ${Mq.sm} {
       width: 60vw;

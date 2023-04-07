@@ -84,7 +84,7 @@ const sx = {
     align-items: center;
   `,
   inner: css`
-    max-width: 1030px;
+    max-width: 803px;
     margin: 0 auto;
   `,
 
@@ -111,11 +111,11 @@ const sx = {
   roll1: css`
     position: absolute;
     top: 12vw;
-    right: -2vw;
+    right: 1vw;
     width: 16vw;
     aspect-ratio: 1;
     @media ${Mq.xl} {
-      right: 8vw;
+      right: 14vw;
     }
   `,
   roll2: css`
@@ -131,11 +131,14 @@ const sx = {
   roll3: css`
     position: absolute;
     top: 5vw;
-    left: -5vw;
+    left: -10vw;
     width: 16vw;
     aspect-ratio: 1;
     @media ${Mq.xxl} {
-      left: 5vw;
+      left: -2vw;
+    }
+    @media (max-width: 1064px) {
+      left: 7vw;
     }
   `,
   car: css`

@@ -61,7 +61,7 @@ const sx = {
     padding: 0 8.333vw;
   `,
   inner: css`
-    max-width: 1030px;
+    max-width: 803px;
     margin: 0 auto;
   `,
   textContainer: css`
