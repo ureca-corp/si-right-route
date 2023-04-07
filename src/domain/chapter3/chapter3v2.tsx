@@ -120,10 +120,9 @@ const st = {
     display: flex;
     line-height: 7.667vw;
     align-items: baseline;
-    margin-top: 2vw;
   `,
   materialWrap: css`
-    width: 55vw;
+    width: 100%;
     aspect-ratio: 1/ 1.559;
     position: relative;
     @media ${Mq.sm} {
@@ -145,10 +144,10 @@ const st = {
   text1: css`
     margin-top: 9vw;
     line-height: 32px;
-    margin-bottom: 9vw;
+    margin-bottom: 5vw;
   `,
   text2: css`
-    margin: 9vw 0 0 0;
+    margin: 5vw 0 0 0;
     line-height: 30px;
   `,
   ImageWrap: css`

@@ -71,8 +71,9 @@ const sx = {
   `,
 
   title: css`
-    margin-top: 2vw;
-    margin-bottom: 7vw;
+    line-height: 7.667vw;
+
+    margin-bottom: 5vw;
   `,
 
   jobs: css`
@@ -87,7 +88,7 @@ const sx = {
     align-items: center;
   `,
   video: css`
-    width: 60vw;
+    width: 100%;
   `,
   bottomText: css`
     margin: 5vw 0 10vw 0;
