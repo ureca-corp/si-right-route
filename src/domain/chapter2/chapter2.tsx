@@ -87,7 +87,7 @@ const sx = {
     align-items: center;
   `,
   video: css`
-    width: 60vw;
+    width: 100%;
   `,
   bottomText: css`
     margin: 5vw 0 10vw 0;
