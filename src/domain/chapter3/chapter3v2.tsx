@@ -123,7 +123,7 @@ const st = {
     margin-top: 2vw;
   `,
   materialWrap: css`
-    width: 55vw;
+    width: 100%;
     aspect-ratio: 1/ 1.559;
     position: relative;
     @media ${Mq.sm} {
