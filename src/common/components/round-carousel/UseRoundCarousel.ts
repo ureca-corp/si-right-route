@@ -53,7 +53,7 @@ export const useRoundCarousel = (itemCount: number, speed: number) => {
     });
 
     const motionSpeed = speed * MOTION_SPEED_FACTOR;
-    motionValue += motionSpeed;
+    motionValue -= motionSpeed;
 
     requestAnimationFrame(animate);
   };
