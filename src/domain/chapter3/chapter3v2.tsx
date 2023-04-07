@@ -144,10 +144,10 @@ const st = {
   text1: css`
     margin-top: 9vw;
     line-height: 32px;
-    margin-bottom: 9vw;
+    margin-bottom: 5vw;
   `,
   text2: css`
-    margin: 9vw 0 0 0;
+    margin: 5vw 0 0 0;
     line-height: 30px;
   `,
   ImageWrap: css`
