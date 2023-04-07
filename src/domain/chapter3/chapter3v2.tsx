@@ -120,7 +120,6 @@ const st = {
     display: flex;
     line-height: 7.667vw;
     align-items: baseline;
-    margin-top: 2vw;
   `,
   materialWrap: css`
     width: 100%;

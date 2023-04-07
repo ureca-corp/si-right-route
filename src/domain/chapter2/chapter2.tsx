@@ -71,8 +71,9 @@ const sx = {
   `,
 
   title: css`
-    margin-top: 2vw;
-    margin-bottom: 7vw;
+    line-height: 7.667vw;
+
+    margin-bottom: 5vw;
   `,
 
   jobs: css`
