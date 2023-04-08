@@ -79,7 +79,7 @@ const sx = {
   jobs: css`
     width: 32.083vw;
     height: 26.458vw;
-    background-color: #ffffff;
+    background-color: #fff;
   `,
   textWrap: css``,
   sup: css``,
