@@ -57,7 +57,7 @@ export const Chapter2 = () => {
 const sx = {
   root: css`
     align-items: center;
-    margin-top: 12vw;
+    margin-top: 300px;
     padding: 0 8.333vw;
   `,
   inner: css`
@@ -90,16 +90,16 @@ const sx = {
   video: css`
     width: 100%;
   `,
-  bottomText: css`
-    margin: 5vw 0 10vw 0;
-    line-height: 32px;
-  `,
   text: css`
-    margin: 1.2vw 0 12.833vw 0;
+    margin: 1.2vw 0 150px 0;
     line-height: 32px;
     @media ${Mq.sm} {
       margin: 24px 0 130px 0;
     }
+  `,
+  bottomText: css`
+    margin: 150px 0 300px 0;
+    line-height: 32px;
   `,
 };
 

@@ -166,7 +166,7 @@ const sx = {
   text: css`
     margin: 1vw 0 0 0;
     @media ${Mq.sm} {
-      margin: 18px 0 105px 0;
+      margin: 18px 0 0 0;
       line-height: 36px;
     }
   `,
@@ -176,7 +176,7 @@ const sx = {
     text-align: center;
     word-break: keep-all;
     position: relative;
-    margin-top: 5vw;
+    margin-top: 150px;
   `,
   video: css`
     /* position: absolute;
@@ -185,45 +185,12 @@ const sx = {
     width: 100%;
     bottom: -32vw;
   `,
-  year: css`
-    font-family: "Noto Sans KR";
-  `,
-  red: css`
-    color: #e94817;
-    /* font-size: 74px !important; */
-    font-weight: 700;
-    margin-bottom: 1vw;
-    @media ${Mq.sm} {
-      font-size: 56px !important;
-    }
-  `,
-  battery: css`
-    font-size: 16px !important;
-    margin-bottom: 1.5vw;
-    @media ${Mq.xs} {
-      padding: 0 15px;
-      margin-bottom: 40px;
-    }
-  `,
-  two: css`
-    font-size: 25.997px;
-    @media ${Mq.md} {
-      font-size: 16px;
-    }
-  `,
-  seperate: css`
-    font-size: 10px !important;
-  `,
+
   bottom: css`
-    margin-top: 14vw;
+    margin-top: 150px;
     line-height: 28px;
     @media ${Mq.sm} {
-      margin: 105px 0 80px 0;
       line-height: 36px;
     }
   `,
-};
-
-const ScissorsImage = () => {
-  return <div css={sx.image} />;
 };

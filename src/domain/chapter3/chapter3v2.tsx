@@ -1,22 +1,19 @@
 import Image from "next/image";
-
-import cloth from "@/assets/cloth.png";
-import recycle from "@/assets/recycle_logo.png";
-import thread1 from "@/assets/thread1.png";
-import thread2 from "@/assets/thread2.png";
 import { ChapterTitle } from "@/common/components/chapterTitle";
 import { CustomRoundCarousel } from "@/common/components/round-carousel";
 import { Mq } from "@/common/theme/screen";
 import { CarSeat } from "@/ui/three-models/carSeat/CarSeat";
 import { Chair } from "@/ui/three-models/chair/Chair";
 import { Coat } from "@/ui/three-models/coat/Coat";
-import { GolfBAg } from "@/ui/three-models/golfBag/GolfBag";
-import { MenJacket } from "@/ui/three-models/men_jacket/menJacket";
-import { Purse } from "@/ui/three-models/purse/Purse";
 import { css } from "@emotion/react";
 import { Stack, Typography } from "@mui/material";
 import material from "@/assets/material.png";
 import recyle_cloth from "@/assets/recycle_cloth.png";
+import golfbag from "@/assets/golfbag.png";
+import puffer from "@/assets/puffer.png";
+import pinkBag from "@/assets/bag_pink.png";
+import shoes from "@/assets/shoes.png";
+import ovals from "@/assets/ovals.png";
 
 export const Chapter3V2 = () => {
   return (
@@ -56,7 +53,8 @@ export const Chapter3V2 = () => {
             "현재에서 멈추지 않고 폐 배터리 분리막을 다양한 형태로 개발하기 위해 우리는 끊임없이 도전합니다.\n패션 제품부터 아웃도어, 인테리어, 자동차 시트까지 다양한 분야로 전개 가능한 놀라운 확장성을 갖춘\nNEW RECYCLING SOLUTION,TEXNIC®의 행보를 지켜봐 주세요."
           }
         </Typography>
-        <Stack css={st.bottom}>
+        <div css={st.ovals}>
+          <Image src={ovals} alt="ovals" fill sizes="100" />
           <div css={st.roundCarouselWrapper}>
             <CustomRoundCarousel
               speed={3}
@@ -65,24 +63,28 @@ export const Chapter3V2 = () => {
                   <CarSeat />
                 </div>,
                 <div key={2} css={threeModelsStyle.golfBag}>
-                  <GolfBAg />
+                  {/* <GolfBAg /> */}
+                  <Image src={golfbag} alt="golfbag" fill sizes="100" />
                 </div>,
-                <div key={3} css={threeModelsStyle.menJacket}>
-                  <MenJacket />
+                <div key={3} css={threeModelsStyle.puffer}>
+                  {/* <MenJacket /> */}
+                  <Image src={puffer} alt="puffer" fill sizes="100" />
                 </div>,
-                <div key={4} css={threeModelsStyle.purse}>
-                  <Purse />
+                <div key={4} css={threeModelsStyle.pinkBag}>
+                  {/* <Purse /> */}
+                  <Image src={pinkBag} alt="pinkBag" fill sizes="100" />
                 </div>,
                 <div key={5} css={threeModelsStyle.chair}>
                   <Chair />
                 </div>,
-                <div key={6} css={threeModelsStyle.coat}>
-                  <Coat />
+                <div key={6} css={threeModelsStyle.shoes}>
+                  <Image src={shoes} alt="shoes" fill sizes="100" />
                 </div>,
               ]}
             />
           </div>
-
+        </div>
+        <Stack css={st.bottom}>
           <Typography
             variant="body1"
             css={st.text3}
@@ -123,7 +125,7 @@ const st = {
   `,
   materialWrap: css`
     width: 100%;
-    aspect-ratio: 1/ 1.559;
+    aspect-ratio: 1/ 1.128;
     position: relative;
     @media ${Mq.sm} {
       width: 81vw;
@@ -142,12 +144,12 @@ const st = {
   `,
 
   text1: css`
-    margin-top: 9vw;
+    margin-top: 150px;
     line-height: 32px;
-    margin-bottom: 5vw;
+    margin-bottom: 150px;
   `,
   text2: css`
-    margin: 5vw 0 0 0;
+    margin: 150px 0 150px 0;
     line-height: 30px;
   `,
   ImageWrap: css`
@@ -160,12 +162,18 @@ const st = {
       height: 55vw;
     }
   `,
-
+  ovals: css`
+    position: relative;
+    width: 600px;
+    aspect-ratio: 1 / 1.272;
+    margin: 0 auto;
+  `,
   bottom: css`
     align-items: center;
-    margin-top: 30vw;
+    margin-top: 150px;
     position: relative;
     padding: 0 16px;
+    margin-bottom: 10vw;
   `,
   roundCarouselWrapper: css`
     position: relative;
@@ -175,7 +183,7 @@ const st = {
   `,
   text3: css`
     text-align: center;
-    margin-top: 37vw;
+
     line-height: 50px;
 
     word-break: keep-all;
@@ -197,7 +205,8 @@ const threeModelsCommonStyle = {
 
 const threeModelsStyle = {
   carSeat: css`
-    ${threeModelsCommonStyle.base}
+    width: 20vw;
+    aspect-ratio: 1;
     animation: carSeat 2s infinite alternate;
     @keyframes carSeat {
       0% {
@@ -210,7 +219,10 @@ const threeModelsStyle = {
   `,
 
   golfBag: css`
-    ${threeModelsCommonStyle.base}
+    /* ${threeModelsCommonStyle.base} */
+    width: 8vw;
+    aspect-ratio: 1 / 2.82;
+    position: relative;
     animation: golfBag 1.5s infinite alternate;
     @keyframes golfBag {
       0% {
@@ -221,8 +233,10 @@ const threeModelsStyle = {
       }
     }
   `,
-  menJacket: css`
-    ${threeModelsCommonStyle.base}
+  puffer: css`
+    width: 12vw;
+    aspect-ratio: 1/1.265;
+    position: relative;
     animation: menJacket 1.5s infinite alternate;
     @keyframes menJacket {
       0% {
@@ -233,8 +247,10 @@ const threeModelsStyle = {
       }
     }
   `,
-  purse: css`
-    ${threeModelsCommonStyle.base}
+  pinkBag: css`
+    width: 14vw;
+    aspect-ratio: 1/0.903;
+    position: relative;
     animation: purse 1.5s infinite alternate;
     @keyframes purse {
       0% {
@@ -246,7 +262,8 @@ const threeModelsStyle = {
     }
   `,
   chair: css`
-    ${threeModelsCommonStyle.base}
+    width: 17vw;
+    aspect-ratio: 1;
     animation: chair 1.5s infinite alternate;
     @keyframes chair {
       0% {
@@ -257,8 +274,10 @@ const threeModelsStyle = {
       }
     }
   `,
-  coat: css`
-    ${threeModelsCommonStyle.base}
+  shoes: css`
+    width: 17vw;
+    aspect-ratio: 1 / 0.55;
+    position: relative;
     animation: coat 1.7s infinite alternate;
     @keyframes coat {
       0% {

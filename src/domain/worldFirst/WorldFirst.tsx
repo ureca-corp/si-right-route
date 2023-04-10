@@ -1,10 +1,10 @@
 import { Mq, useCustomMediaQuery } from "@/common/theme/screen";
 import line from "@/assets/Line.png";
 import Oval from "@/assets/Oval.png";
-
 import Oval2 from "@/assets/oval-v2.svg";
 import { css, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
+import texnic from "@/assets/texnic.png";
 
 export const WorldFirst = () => {
   const theme = useTheme();
@@ -32,7 +32,7 @@ export const WorldFirst = () => {
             ? "배터리 분리막\n리사이클 신소재"
             : "배터리 분리막 리사이클 신소재"}
         </Typography>
-        <Typography
+        {/* <Typography
           css={sx.texnic}
           variant="h1"
           data-aos={"fade-up"}
@@ -40,7 +40,10 @@ export const WorldFirst = () => {
         >
           {"TEXNIC"}
           <sup css={sx.sup}>®</sup>
-        </Typography>
+        </Typography> */}
+        <div css={sx.texnic}>
+          <Image src={texnic} alt="texnic" fill sizes="100" />
+        </div>
 
         <div css={sx.line} data-aos="fade-in" data-aos-easing="ease-in-out">
           <Image src={line} alt="line" fill sizes={"100"} />
@@ -102,9 +105,14 @@ const sx = {
     }
   `,
   texnic: css`
-    line-height: 11.667vw;
-    font-weight: 900;
+    width: 346px;
+    aspect-ratio: 1/0.189;
+    position: relative;
     margin-top: 5vw;
+    margin-bottom: 5vw;
+    @media ${Mq.sm} {
+      width: 59vw;
+    }
   `,
   sup: css`
     font-size: 30px;
