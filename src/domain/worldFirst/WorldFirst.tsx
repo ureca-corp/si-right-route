@@ -32,15 +32,7 @@ export const WorldFirst = () => {
             ? "배터리 분리막\n리사이클 신소재"
             : "배터리 분리막 리사이클 신소재"}
         </Typography>
-        {/* <Typography
-          css={sx.texnic}
-          variant="h1"
-          data-aos={"fade-up"}
-          data-aos-duration="2000"
-        >
-          {"TEXNIC"}
-          <sup css={sx.sup}>®</sup>
-        </Typography> */}
+
         <div css={sx.texnic}>
           <Image src={texnic} alt="texnic" fill sizes="100" />
         </div>
@@ -92,9 +84,10 @@ const sx = {
   `,
   textWrap: css`
     align-items: center;
+    margin-bottom: 150px;
   `,
   world: css`
-    margin-top: 15.833vw;
+    margin-top: 270px;
     line-height: 6.667vw;
     @media ${Mq.md} {
       margin-bottom: 10px;
@@ -114,11 +107,7 @@ const sx = {
       width: 59vw;
     }
   `,
-  sup: css`
-    font-size: 30px;
-    position: relative;
-    top: -29px;
-  `,
+
   line: css`
     position: relative;
     width: 1px;
