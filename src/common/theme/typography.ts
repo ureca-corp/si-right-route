@@ -31,7 +31,7 @@ export const baseTypographyOptions: TypographyOptions = {
   body1: {
     fontSize: "24", //60
     fontWeight: "400",
-    fontFamily: "Noto Sans KR",
+    fontFamily: "Pretendard-Regular",
     "@media (max-width:1200px)": {
       fontSize: "18",
     },
@@ -39,7 +39,7 @@ export const baseTypographyOptions: TypographyOptions = {
   body2: {
     fontSize: "20", //40
     fontWeight: "400",
-    fontFamily: "Noto Sans KR",
+    fontFamily: "Pretendard-Regular",
   },
 };
 

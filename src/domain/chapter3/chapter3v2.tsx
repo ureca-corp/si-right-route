@@ -176,7 +176,6 @@ const st = {
     margin-top: 150px;
     position: relative;
     padding: 0 16px;
-    margin-bottom: 10vw;
   `,
   roundCarouselWrapper: css`
     position: relative;

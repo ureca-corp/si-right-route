@@ -127,7 +127,7 @@ const sx = {
     margin-bottom: 2vw;
   `,
   take: css`
-    font-family: Noto Sans KR !important;
+    font-family: "Pretendard-Regular" !important;
     text-align: center;
   `,
   oval: css`

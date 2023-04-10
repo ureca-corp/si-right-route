@@ -23,7 +23,7 @@ export const useRoundCarousel = (itemCount: number, speed: number) => {
 
   const animate = () => {
     const containerWidth = containerRef.current?.offsetWidth ?? 0;
-    const radius = containerWidth / 2.5;
+    const radius = containerWidth / 1.7;
 
     const $targets = targetsRefArray.current;
 
@@ -83,12 +83,18 @@ const getPointOnItem = (
   const angle = targetIndex * angleIncrement + motionValue;
 
   // 이동 기울임각
-  const angleOffsetOfX = 80;
-  const angleOffsetOfY = 45;
+  // const angleOffsetOfX = 119;
+  // const angleOffsetOfY = 34;
+
+  // const x = center.x + radius * Math.cos(angle + angleOffsetOfX);
+  // const y = center.y + radius * Math.sin(angle + angleOffsetOfY);
+
+  const angleOffsetOfX = 60.2;
+
+  const tiltFactorOfY = 2.7;
 
   const x = center.x + radius * Math.cos(angle + angleOffsetOfX);
-  const y = center.y + radius * Math.sin(angle + angleOffsetOfY);
-
+  const y = center.y + (radius / tiltFactorOfY) * Math.sin(angle);
   return {
     x,
     y,
