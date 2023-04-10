@@ -52,7 +52,10 @@ export const useRoundCarousel = (itemCount: number, speed: number) => {
       it.style.zIndex = zIndex.toString();
     });
 
+    // 이동 속도
     const motionSpeed = speed * MOTION_SPEED_FACTOR;
+
+    // 이동 방향
     motionValue -= motionSpeed;
 
     requestAnimationFrame(animate);
@@ -79,12 +82,12 @@ const getPointOnItem = (
   const angleIncrement = (2 * Math.PI) / numberOfPoints;
   const angle = targetIndex * angleIncrement + motionValue;
 
-  const angleOffsetOfX = 60;
-
-  const tiltFactorOfY = 2.2;
+  // 이동 기울임각
+  const angleOffsetOfX = 80;
+  const angleOffsetOfY = 45;
 
   const x = center.x + radius * Math.cos(angle + angleOffsetOfX);
-  const y = center.y + (radius / tiltFactorOfY) * Math.sin(angle);
+  const y = center.y + radius * Math.sin(angle + angleOffsetOfY);
 
   return {
     x,

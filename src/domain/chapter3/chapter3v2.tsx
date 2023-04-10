@@ -167,6 +167,9 @@ const st = {
     width: 600px;
     aspect-ratio: 1 / 1.272;
     margin: 0 auto;
+    @media ${Mq.lg} {
+      width: 58.59vw;
+    }
   `,
   bottom: css`
     align-items: center;
@@ -205,7 +208,7 @@ const threeModelsCommonStyle = {
 
 const threeModelsStyle = {
   carSeat: css`
-    width: 20vw;
+    width: 270px;
     aspect-ratio: 1;
     animation: carSeat 2s infinite alternate;
     @keyframes carSeat {
@@ -213,28 +216,34 @@ const threeModelsStyle = {
         transform: translate(0, 0);
       }
       100% {
-        transform: translate(0, 15%);
+        transform: translate(0, 13%);
       }
+    }
+    @media ${Mq.lg} {
+      width: 24vw;
     }
   `,
 
   golfBag: css`
     /* ${threeModelsCommonStyle.base} */
-    width: 8vw;
+    width: 105px;
     aspect-ratio: 1 / 2.82;
     position: relative;
     animation: golfBag 1.5s infinite alternate;
     @keyframes golfBag {
       0% {
-        transform: translate(0, 15%);
+        transform: translate(0, 13%);
       }
       100% {
         transform: translate(0, 0);
       }
     }
+    @media ${Mq.lg} {
+      width: 9.5vw;
+    }
   `,
   puffer: css`
-    width: 12vw;
+    width: 163px;
     aspect-ratio: 1/1.265;
     position: relative;
     animation: menJacket 1.5s infinite alternate;
@@ -243,26 +252,32 @@ const threeModelsStyle = {
         transform: translate(0, 0);
       }
       100% {
-        transform: translate(0, 15%);
+        transform: translate(0, 13%);
       }
+    }
+    @media ${Mq.lg} {
+      width: 14vw;
     }
   `,
   pinkBag: css`
-    width: 14vw;
+    width: 180px;
     aspect-ratio: 1/0.903;
     position: relative;
     animation: purse 1.5s infinite alternate;
     @keyframes purse {
       0% {
-        transform: translate(0, 15%);
+        transform: translate(0, 13%);
       }
       100% {
         transform: translate(0, 0);
       }
     }
+    @media ${Mq.lg} {
+      width: 16vw;
+    }
   `,
   chair: css`
-    width: 17vw;
+    width: 222px;
     aspect-ratio: 1;
     animation: chair 1.5s infinite alternate;
     @keyframes chair {
@@ -270,22 +285,28 @@ const threeModelsStyle = {
         transform: translate(0, 0);
       }
       100% {
-        transform: translate(0, 15%);
+        transform: translate(0, 13%);
       }
+    }
+    @media ${Mq.lg} {
+      width: 18vw;
     }
   `,
   shoes: css`
-    width: 17vw;
+    width: 248px;
     aspect-ratio: 1 / 0.55;
     position: relative;
     animation: coat 1.7s infinite alternate;
     @keyframes coat {
       0% {
-        transform: translate(0, 15%);
+        transform: translate(0, 13%);
       }
       100% {
         transform: translate(0, 0);
       }
+    }
+    @media ${Mq.lg} {
+      width: 19vw;
     }
   `,
 };
