@@ -4,7 +4,6 @@ import { CustomRoundCarousel } from "@/common/components/round-carousel";
 import { Mq } from "@/common/theme/screen";
 import { CarSeat } from "@/ui/three-models/carSeat/CarSeat";
 import { Chair } from "@/ui/three-models/chair/Chair";
-import { Coat } from "@/ui/three-models/coat/Coat";
 import { css } from "@emotion/react";
 import { Stack, Typography } from "@mui/material";
 import material from "@/assets/material.png";
@@ -127,10 +126,6 @@ const st = {
     width: 100%;
     aspect-ratio: 1/ 1.128;
     position: relative;
-    @media ${Mq.sm} {
-      width: 81vw;
-      height: 95vw;
-    }
   `,
   textWrap: css`
     position: absolute;
