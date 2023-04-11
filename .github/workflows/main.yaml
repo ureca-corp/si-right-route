@@ -1,0 +1,48 @@
+name: RightRoute CI/CD
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-2
+
+      - name: Start Build Action
+        run: yarn install --immutable --immutable-cache --check-cache && yarn export
+
+      - name: Upload file to bucket
+        uses: koraykoska/s3-upload-github-action@master
+        env:
+          FILE: ./out/
+          S3_ENDPOINT: "http://ureca-rightroute.s3-website.ap-northeast-2.amazonaws.com"
+          S3_BUCKET: "ureca-rightroute"
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+
+      - uses: ravsamhq/notify-slack-action@v2
+        if: always()
+        with:
+          status: ${{ job.status }}
+          notification_title: "{workflow} has {status_message}"
+          message_format: "{emoji} *{workflow}* {status_message} in <{repo_url}|{repo}>"
+          footer: "Linked Repo <{repo_url}|{repo}>"
+          notify_when: "success,failure,cancelled,warnings,skipped"
+          mention_users: "U048E4GMEMN"
+          mention_users_when: "success,failure,cancelled,warnings,skipped"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
