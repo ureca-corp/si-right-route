@@ -126,6 +126,7 @@ const st = {
     width: 100%;
     aspect-ratio: 1/ 1.128;
     position: relative;
+    margin-top: 107px;
   `,
   textWrap: css`
     position: absolute;
