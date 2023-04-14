@@ -49,8 +49,10 @@ export const Chapter3V2 = () => {
           data-aos-duration="1500"
         >
           {
-            "현재에서 멈추지 않고 폐 배터리 분리막을 다양한 형태로 개발하기 위해 우리는 끊임없이 도전합니다.\n패션 제품부터 아웃도어, 인테리어, 자동차 시트까지 다양한 분야로 전개 가능한 놀라운 확장성을 갖춘\nNEW RECYCLING SOLUTION,TEXNIC®의 행보를 지켜봐 주세요."
+            "현재에서 멈추지 않고 폐 배터리 분리막을 다양한 형태로 개발하기 위해 우리는 끊임없이 도전합니다.\n패션 제품부터 아웃도어, 인테리어, 자동차 시트까지 다양한 분야로 전개 가능한 놀라운 확장성을 갖춘\nNEW RECYCLING SOLUTION,TEXNIC"
           }
+          <sup css={st.sup}>®</sup>
+          {"의 행보를 지켜봐 주세요."}
         </Typography>
         <div css={st.ovals}>
           <Image src={ovals} alt="ovals" fill sizes="100" />
@@ -147,6 +149,9 @@ const st = {
   text2: css`
     margin: 150px 0 150px 0;
     line-height: 30px;
+  `,
+  sup: css`
+    line-height: 25px;
   `,
   ImageWrap: css`
     margin: 0 auto;
