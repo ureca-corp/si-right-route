@@ -45,7 +45,9 @@ export const Chapter2 = () => {
             data-aos-duration="1500"
           >
             <Typography css={sx.bottomText} variant="body2">
-              {`우리는 수거한 폐 분리막을 성능별로 나누고 가공하여 섬유 소재로 만들 수 있는 독자적인 특허 기술 개발에 성공하였고, 배터리 분리막 리사이클 소재인 TEXNIC 을 '세계 최초'로 선보일 수 있었습니다.\n우리의 기술이 특별한 이유는 배터리 분리막 고유의 미세기공을 헤치지 않는 혁신 기술이면서, 수거한 폐 분리막을 100% 활용해 추가 폐기물이 없고 재활용 공정에서 물과 화학물질을 사용하지 않는 친환경 재활용 기술이기 때문입니다`}
+              {`우리는 수거한 폐 분리막을 성능별로 나누고 가공하여 섬유 소재로 만들 수 있는 독자적인 특허 기술 개발에 성공하였고, 배터리 분리막 리사이클 소재인 TEXNIC`}
+              <sup css={sx.sup2}>®</sup>{" "}
+              {`을 '세계 최초'로 선보일 수 있었습니다.\n우리의 기술이 특별한 이유는 배터리 분리막 고유의 미세기공을 헤치지 않는 혁신 기술이면서, 수거한 폐 분리막을 100% 활용해 추가 폐기물이 없고 재활용 공정에서 물과 화학물질을 사용하지 않는 친환경 재활용 기술이기 때문입니다.`}
             </Typography>
           </Stack>
         </Stack>
@@ -82,7 +84,13 @@ const sx = {
     background-color: #fff;
   `,
   textWrap: css``,
-  sup: css``,
+  sup: css`
+    line-height: 30px;
+    margin-left: 4px;
+    @media ${Mq.sm} {
+      line-height: 21px;
+    }
+  `,
   imageWrap: css`
     display: flex;
     align-items: center;
@@ -101,8 +109,8 @@ const sx = {
     margin: 150px 0 300px 0;
     line-height: 32px;
   `,
-};
 
-const RecycleImage = () => {
-  return <div css={sx.jobs} data-aos="fade-left" data-aos-easing="linear" />;
+  sup2: css`
+    line-height: 25px;
+  `,
 };
