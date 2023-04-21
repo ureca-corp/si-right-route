@@ -48,7 +48,7 @@ export const WorldFirst = () => {
         >
           {`"Take a New Spin for the future"`}
         </Typography>
-        <div css={sx.oval}>
+        {/* <div css={sx.oval}>
           {isThemeDark ? (
             <Image
               src={Oval}
@@ -66,7 +66,27 @@ export const WorldFirst = () => {
               data-aos={"fade-in"}
             />
           )}
-        </div>
+        </div> */}
+        <Stack direction="row">
+          <div css={[sx.oval, sx.oval1]}>
+            <Image
+              src={Oval}
+              alt="oval"
+              fill
+              sizes={"100"}
+              data-aos={"fade-in"}
+            />
+          </div>{" "}
+          <div css={[sx.oval, sx.oval2]}>
+            <Image
+              src={Oval}
+              alt="oval"
+              fill
+              sizes={"100"}
+              data-aos={"fade-in"}
+            />
+          </div>
+        </Stack>
       </Stack>
     </Stack>
   );
@@ -135,8 +155,22 @@ const sx = {
     }
     @media ${Mq.sm} {
       margin-top: 8px;
-      width: 36px;
-      height: 16px;
+      width: 55px;
+      height: 34px;
+    }
+  `,
+  oval1: css`
+    top: 0;
+    left: 1.3vw;
+    @media ${Mq.sm} {
+      left: 15px;
+    }
+  `,
+  oval2: css`
+    top: 0;
+    left: -1.3vw;
+    @media ${Mq.sm} {
+      left: -15px;
     }
   `,
   battery: css`
