@@ -112,6 +112,9 @@ const sx = {
     @media ${Mq.md} {
       margin-bottom: 10px;
     }
+    @media ${Mq.sm} {
+      margin-top: 186px;
+    }
     @media ${Mq.xs} {
       text-align: center;
       line-height: 1.167;

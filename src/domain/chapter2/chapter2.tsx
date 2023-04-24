@@ -61,6 +61,9 @@ const sx = {
     align-items: center;
     margin-top: 300px;
     padding: 0 8.333vw;
+    @media ${Mq.sm} {
+      margin-top: 56px;
+    }
   `,
   inner: css`
     max-width: 803px;
@@ -102,12 +105,15 @@ const sx = {
     margin: 1.2vw 0 150px 0;
     line-height: 32px;
     @media ${Mq.sm} {
-      margin: 24px 0 130px 0;
+      margin: 24px 0 56px 0;
     }
   `,
   bottomText: css`
     margin: 150px 0 300px 0;
     line-height: 32px;
+    @media ${Mq.sm} {
+      margin: 56px 0 186px 0;
+    }
   `,
 
   sup2: css`
