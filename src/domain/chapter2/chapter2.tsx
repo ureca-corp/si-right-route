@@ -62,7 +62,7 @@ const sx = {
     margin-top: 300px;
     padding: 0 8.333vw;
     @media ${Mq.sm} {
-      margin-top: 56px;
+      margin-top: 186px;
     }
   `,
   inner: css`

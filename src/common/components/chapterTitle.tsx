@@ -10,7 +10,7 @@ export const ChapterTitle = ({ numb }: ChapterTitleType) => {
   return (
     <Stack direction="row" css={sx.chaptor}>
       <Typography variant="h6" component={"div"}>
-        CHAPTOR
+        CHAPTER
       </Typography>
       <Typography css={sx.numb}> 0{numb}</Typography>
     </Stack>
