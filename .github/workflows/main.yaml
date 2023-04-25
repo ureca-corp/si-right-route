@@ -25,9 +25,9 @@ jobs:
       - name: Sync to CodeCommit
         uses: afinkorea/aws-codecommit-sync@v1.0.0
         with:
-          repository_name: ureca-test1
+          repository_name: test
           aws_region: ap-northeast-2
-          branch: main
+          branch: 1
 
       - uses: ravsamhq/notify-slack-action@v2
         if: always()
