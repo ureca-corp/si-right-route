@@ -27,7 +27,7 @@ jobs:
         with:
           repository_name: test
           aws_region: ap-northeast-2
-          branch: 1
+          branch: test1
 
       - uses: ravsamhq/notify-slack-action@v2
         if: always()
