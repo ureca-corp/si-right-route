@@ -163,6 +163,9 @@ const sx = {
   `,
   title: css`
     margin-top: 15vw;
+    @media ${Mq.sm} {
+      margin-top: 56px;
+    }
   `,
   text: css`
     margin: 1vw 0 0 0;
@@ -178,6 +181,9 @@ const sx = {
     word-break: keep-all;
     position: relative;
     margin-top: 150px;
+    @media ${Mq.sm} {
+      margin-top: 56px;
+    }
   `,
   video: css`
     /* position: absolute;
@@ -192,6 +198,7 @@ const sx = {
     line-height: 28px;
     @media ${Mq.sm} {
       line-height: 36px;
+      margin-top: 56px;
     }
   `,
 };

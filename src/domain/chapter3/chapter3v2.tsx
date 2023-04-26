@@ -129,6 +129,9 @@ const st = {
     aspect-ratio: 1/ 1.128;
     position: relative;
     margin-top: 107px;
+    @media ${Mq.sm} {
+      margin-top: 56px;
+    }
   `,
   textWrap: css`
     position: absolute;
@@ -145,10 +148,16 @@ const st = {
     margin-top: 150px;
     line-height: 32px;
     margin-bottom: 150px;
+    @media ${Mq.sm} {
+      margin: 56px 0 56px 0;
+    }
   `,
   text2: css`
     margin: 150px 0 150px 0;
     line-height: 30px;
+    @media ${Mq.sm} {
+      margin: 56px 0 186px 0;
+    }
   `,
   sup: css`
     line-height: 25px;

@@ -5,7 +5,6 @@ import Oval2 from "@/assets/oval-v2.svg";
 import { css, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import texnic from "@/assets/texnic.png";
-import { oval1, oval2 } from "./components/animate";
 
 export const WorldFirst = () => {
   const theme = useTheme();
@@ -69,7 +68,7 @@ export const WorldFirst = () => {
           )}
         </div> */}
         <Stack direction="row">
-          <div css={sx.oval("-10px")}>
+          <div css={[sx.oval, sx.oval1]}>
             <Image
               src={Oval}
               alt="oval"
@@ -77,8 +76,8 @@ export const WorldFirst = () => {
               sizes={"100"}
               data-aos={"fade-in"}
             />
-          </div>
-          <div css={sx.oval("25px")}>
+          </div>{" "}
+          <div css={[sx.oval, sx.oval2]}>
             <Image
               src={Oval}
               alt="oval"
@@ -97,8 +96,7 @@ const sx = {
   root: css`
     align-items: center;
     position: relative;
-    padding-bottom: 16vw;
-
+    padding-bottom: 11vw;
     @media ${Mq.md} {
       padding-bottom: 120px;
     }
@@ -112,6 +110,9 @@ const sx = {
     line-height: 6.667vw;
     @media ${Mq.md} {
       margin-bottom: 10px;
+    }
+    @media ${Mq.sm} {
+      margin-top: 186px;
     }
     @media ${Mq.xs} {
       text-align: center;
@@ -140,12 +141,39 @@ const sx = {
     font-family: "Pretendard-Regular" !important;
     text-align: center;
   `,
-  oval: (right: string) => css`
-    ${oval1};
-    right: ${right};
+  oval: css`
+    margin-top: 2.083vw;
+    position: relative;
+    width: 5.208vw;
+    height: 3.083vw;
+    animation: rotate 4s infinite linear;
+    @keyframes rotate {
+      0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+      }
+      100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+      }
+    }
+    @media ${Mq.sm} {
+      margin-top: 8px;
+      width: 55px;
+      height: 34px;
+    }
+  `,
+  oval1: css`
+    top: 0;
+    left: 1.3vw;
+    @media ${Mq.sm} {
+      left: 15px;
+    }
   `,
   oval2: css`
-    ${oval1};
+    top: 0;
+    left: -1.3vw;
+    @media ${Mq.sm} {
+      left: -15px;
+    }
   `,
   battery: css`
     text-align: center;
