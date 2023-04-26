@@ -78,8 +78,10 @@ const sx = {
 
   title: css`
     line-height: 7.667vw;
-
     margin-bottom: 5vw;
+    @media ${Mq.sm} {
+      margin-bottom: 56px;
+    }
   `,
 
   jobs: css`
