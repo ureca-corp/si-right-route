@@ -39,8 +39,8 @@ export const Chapter2 = () => {
               loop
               playsInline
             />
-            <video autoPlay muted loop playsInline css={sx.video}>
-              <source src="/assets/ch2_video.mp4" />
+            <video autoPlay muted controls playsInline css={sx.video}>
+              <source src="/assets/ch2_video.mp4" type="video/mp4" />
             </video>
           </Stack>
           <Stack
