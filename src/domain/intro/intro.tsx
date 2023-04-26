@@ -40,11 +40,17 @@ const sx = {
   head2: css`
     font-family: Texnic;
     margin-top: 5vw;
+    @media ${Mq.sm} {
+      margin-top: 300px;
+    }
   `,
   body: css`
     margin-bottom: 19.833vw;
     margin-top: 2vw;
     line-height: 40px;
+    @media ${Mq.sm} {
+      margin: 100px 0 500px 0;
+    }
     @media ${Mq.xs} {
       font-size: 18px;
     }

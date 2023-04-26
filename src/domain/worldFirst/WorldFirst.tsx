@@ -5,6 +5,7 @@ import Oval2 from "@/assets/oval-v2.svg";
 import { css, Stack, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import texnic from "@/assets/texnic.png";
+import { oval1, oval2 } from "./components/animate";
 
 export const WorldFirst = () => {
   const theme = useTheme();
@@ -48,7 +49,7 @@ export const WorldFirst = () => {
         >
           {`"Take a New Spin for the future"`}
         </Typography>
-        <div css={sx.oval}>
+        {/* <div css={sx.oval}>
           {isThemeDark ? (
             <Image
               src={Oval}
@@ -66,7 +67,27 @@ export const WorldFirst = () => {
               data-aos={"fade-in"}
             />
           )}
-        </div>
+        </div> */}
+        <Stack direction="row">
+          <div css={sx.oval("-10px")}>
+            <Image
+              src={Oval}
+              alt="oval"
+              fill
+              sizes={"100"}
+              data-aos={"fade-in"}
+            />
+          </div>
+          <div css={sx.oval("25px")}>
+            <Image
+              src={Oval}
+              alt="oval"
+              fill
+              sizes={"100"}
+              data-aos={"fade-in"}
+            />
+          </div>
+        </Stack>
       </Stack>
     </Stack>
   );
@@ -76,7 +97,7 @@ const sx = {
   root: css`
     align-items: center;
     position: relative;
-    padding-bottom: 11vw;
+    padding-bottom: 16vw;
 
     @media ${Mq.md} {
       padding-bottom: 120px;
@@ -119,25 +140,12 @@ const sx = {
     font-family: "Pretendard-Regular" !important;
     text-align: center;
   `,
-  oval: css`
-    margin-top: 2.083vw;
-    position: relative;
-    width: 5.208vw;
-    height: 3.083vw;
-    animation: rotate 4s infinite linear;
-    @keyframes rotate {
-      0% {
-        transform: rotate3d(0, 1, 0, 0deg);
-      }
-      100% {
-        transform: rotate3d(0, 1, 0, 360deg);
-      }
-    }
-    @media ${Mq.sm} {
-      margin-top: 8px;
-      width: 36px;
-      height: 16px;
-    }
+  oval: (right: string) => css`
+    ${oval1};
+    right: ${right};
+  `,
+  oval2: css`
+    ${oval1};
   `,
   battery: css`
     text-align: center;

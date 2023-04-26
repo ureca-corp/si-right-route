@@ -57,6 +57,7 @@ export const Chapter1 = () => {
               autoPlay
               muted
               loop
+              playsInline
             ></video>
           </Stack>
 
