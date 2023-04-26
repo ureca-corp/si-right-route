@@ -39,14 +39,9 @@ export const Chapter2 = () => {
               loop
               playsInline
             />
-            <video
-              css={sx.video}
-              src="/assets/rolls.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-            ></video>
+            <video autoPlay muted loop playsInline css={sx.video}>
+              <source src="/assets/ch2_video.mp4" />
+            </video>
           </Stack>
           <Stack
             css={sx.textWrap}

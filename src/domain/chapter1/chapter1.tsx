@@ -59,14 +59,6 @@ export const Chapter1 = () => {
               loop
               playsInline
             ></video>
-             <video
-              css={sx.video}
-              src="/assets/ch2_video.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
           </Stack>
 
           <Typography
