@@ -16,6 +16,7 @@ body {
   width: 100%;
   font-family: "Texnic";
   font-weight: 400;
+  word-break: keep-all;
 }
 
 #__next {
