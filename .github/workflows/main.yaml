@@ -14,20 +14,24 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          
+      - name: Build Project
+        run: yarn install && yarn build
+      
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-2
+#      - name: Configure AWS Credentials
+#        uses: aws-actions/configure-aws-credentials@v1
+#        with:
+#          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#          aws-region: ap-northeast-2
 
-      - name: Sync to CodeCommit
-        uses: afinkorea/aws-codecommit-sync@v1.0.0
-        with:
-          repository_name: test1
-          aws_region: ap-northeast-2
-          branch: main
+#      - name: Sync to CodeCommit
+#        uses: afinkorea/aws-codecommit-sync@v1.0.0
+#        with:
+#          repository_name: test1
+#          aws_region: ap-northeast-2
+#          branch: main
 
       - uses: ravsamhq/notify-slack-action@v2
         if: always()
